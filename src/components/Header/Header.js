@@ -6,7 +6,7 @@ class Header extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            page: 'HOME'
+            currentPage: 'HOME'
         }
         this.menuItems = {
             home: 'HOME',
@@ -19,13 +19,15 @@ class Header extends React.Component {
     }
 
     activateMenuItem(menuItem) {
-        return this.state.page === menuItem ? 'active' : '';
+        return this.state.currentPage === menuItem ? 'active' : '';
     }
 
     handlePageChange(menuItem) {
         this.setState({
-            page: menuItem
+            currentPage: menuItem
         });
+        this.props.changePage(menuItem);
+
     }
 
     renderMenu() {
