@@ -24,6 +24,8 @@ class ContentBlock extends React.Component {
             return (
                 <div className="ContentBlock">
                     <Banner />
+                    <div className="separator"></div>
+                    
                 </div>
             );
         }
