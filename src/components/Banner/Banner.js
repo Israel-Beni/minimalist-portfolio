@@ -7,9 +7,14 @@ class Banner extends React.Component {
         return (
             <div className="Banner">
                 <div className="Banner_text">
-                    <h1>Hey, I'm Israel Ben T. Degbe and I love building beautiful websites</h1>
+                    <div className="hero_text">
+                        <h1>Hey, I'm Israel Ben T. Degbe and I love building beautiful websites</h1>
+                    </div>
                     <button className="Banner_button">
-                        <img src={down_arrows} alt="down-arrows" />
+                        <div className="image_container">
+                            <div className="background_filler"></div>
+                            <img src={down_arrows} alt="down-arrows" />
+                        </div>
                         <span>About Me</span>
                     </button>
                 </div>
