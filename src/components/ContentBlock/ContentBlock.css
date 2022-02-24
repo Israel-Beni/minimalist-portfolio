@@ -2,3 +2,7 @@
     width: 69.4375rem;
     margin: auto;
 }
+
+.ContentBlock .separator {
+    height: 9.375rem;
+}

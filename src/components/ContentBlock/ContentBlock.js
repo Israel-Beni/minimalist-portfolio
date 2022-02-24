@@ -1,6 +1,7 @@
 import React from 'react';
 import './ContentBlock.css';
 import Banner from '../Banner/Banner';
+import AboutMe from '../AboutMe/AboutMe';
 
 class ContentBlock extends React.Component {
     constructor(props) {
@@ -25,7 +26,7 @@ class ContentBlock extends React.Component {
                 <div className="ContentBlock">
                     <Banner />
                     <div className="separator"></div>
-                    
+                    <AboutMe />
                 </div>
             );
         }
