@@ -6,7 +6,7 @@ class Header extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            page: 'portfolio'
+            page: 'HOME'
         }
         this.menuItems = {
             home: 'HOME',
@@ -19,7 +19,7 @@ class Header extends React.Component {
     }
 
     activateMenuItem(menuItem) {
-        return this.state.page === menuItem ? 'activate' : '';
+        return this.state.page === menuItem ? 'active' : '';
     }
 
     handlePageChange(menuItem) {
@@ -33,9 +33,12 @@ class Header extends React.Component {
             const menuItemValue = this.menuItems[menuItem];
             return <li  key={menuItemValue}
                         className={this.activateMenuItem(menuItemValue)}
-                        onClick={ event => this.handlePageChange(menuItemValue)}
-                    >{menuItemValue}</li>
-        })
+                        onClick={ event => {
+                            this.handlePageChange(menuItemValue)
+                            }
+                        }
+                    >{menuItemValue}</li>;
+        });
     }
 
 
@@ -45,6 +48,7 @@ class Header extends React.Component {
                 <div className="logo_container">
                     <img src={logo} alt="logo" />
                 </div>
+                <div className="separator"></div>
                 <ul className="navigation_menu">
                     {this.renderMenu()}
                 </ul>
