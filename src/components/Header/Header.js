@@ -5,6 +5,9 @@ import logo from '../../images/logo.svg';
 class Header extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+            page: 'home'
+        }
     }
     render() {
         return (
