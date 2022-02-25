@@ -1,0 +1,15 @@
+.App {
+    background-color: #FAFAFA;
+}
+
+.App .separator_1 {
+    height: 4rem;
+}
+
+.App .separator_2 {
+    height: 3.375rem;
+}
+
+.App .separator_3 {
+    height: 9.375rem;
+}

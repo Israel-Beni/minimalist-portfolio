@@ -1,2 +1,6 @@
 .AboutMe {
 }
+
+.AboutMe .info .go-to {
+    text-transform: uppercase;
+}

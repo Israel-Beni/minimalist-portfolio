@@ -18,10 +18,13 @@ class AboutMe extends React.Component {
                         React, but I can adapt to whatever tools are required. I'm based in Chandigarh,
                         India, but I'm happy to working remotely and have experience in remote teams. However,
                         I'm open to relocating since I prefer working physically. When I'm not coding, you'll find me 
-                        playing guitar or piano, and sometimes writing poems or songs. I love traveling and being out in nature whether that's 
-                        going for a walk, contemplating the nature; I also appreciate being alone. I'd love you to 
+                        playing guitar or piano, and sometimes writing poems and songs. I love traveling and being out in nature whether that's 
+                        going for a walk or contemplating the nature; I also appreciate being alone. I'd love you to 
                         check out my work.
                     </p>
+                    <button className="go-to">
+                        Go to portfolio
+                    </button>
                 </div>
             </div>
         );
