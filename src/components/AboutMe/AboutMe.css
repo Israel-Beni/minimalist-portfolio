@@ -3,4 +3,5 @@
 
 .AboutMe .info .go-to {
     text-transform: uppercase;
+    background-color: none;
 }
