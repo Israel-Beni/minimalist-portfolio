@@ -8,7 +8,7 @@ class Footer extends React.Component {
         return (
             <div class="Footer">
                 <ContactLink />
-                <FooterBar />
+                <FooterBar changePage={this.props.changePage} />
             </div>
         );
     }
