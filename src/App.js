@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import ContentBlock from './components/ContentBlock/ContentBlock';
-import Footer from './Components/Footer/Footer';
+import Footer from './components/Footer/Footer';
 
 class App extends React.Component {
   constructor(props) {

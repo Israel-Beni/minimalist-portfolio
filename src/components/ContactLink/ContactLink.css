@@ -1,0 +1,39 @@
+.ContactLink {
+    width: 69.375rem;
+    height: 5.25rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 9.375rem;
+}
+
+.ContactLink .info {
+    font-family: "Ibarra Real Nova";
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 2.625rem;
+    letter-spacing: -.36px;
+    color: #33323D;
+    height: 100%;
+    width: 21.875rem;
+}
+
+.ContactLink .separator {
+    margin: 0 2rem;
+    border-bottom: 1px solid rgb(51, 50, 61, .15);
+    flex: 1;
+}
+
+.ContactLink .contact-me {
+    height: 3rem;
+    width: 10.125rem;
+    border: 1px solid #33323D;
+    background-color: transparent;
+    font-family: "Public Sans";
+    text-transform: uppercase;
+    /*font-weight: 100;*/
+    letter-spacing: 2px;
+    font-size: .75rem;
+    line-height: .875rem;
+    color: #33323D;
+}
