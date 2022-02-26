@@ -31,7 +31,7 @@ class App extends React.Component {
         <div className="separator_2"></div>
         <ContentBlock changePage={this.changePage} getCurrentPage={this.getCurrentPage} />
         <div className="separator_3"></div>
-
+        <
       </div>
     );
   }
