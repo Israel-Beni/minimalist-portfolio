@@ -4,8 +4,14 @@ import './ContactLink.css';
 class ContactLink extends React.Component {
     render() {
         return (
-            <div class="ContactLink">
-             
+            <div className="ContactLink">
+                <p className="info">
+                    Interested in doing a project together?
+                </p>
+                <div className="separator"></div>
+                <button className="contact-me">
+                    Contact me
+                </button>
             </div>
         );
     }
