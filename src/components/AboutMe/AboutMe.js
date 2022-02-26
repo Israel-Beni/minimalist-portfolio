@@ -9,22 +9,24 @@ class AboutMe extends React.Component {
                 <div className="image_container">
                     <img src={profileImage} alt="profile" />
                 </div>
+                <div className="separator"></div>
                 <div className="info">
-                    <h2>About Me</h2>
-                    <p className="description">
-                        I'm a junior front-end developer looking for a new role in an exciting 
-                        company. I focus on writing accessible HTML, using modern CSS practices 
-                        and writing clean JavaScript. When writing JavaScript code, I mostly use 
-                        React, but I can adapt to whatever tools are required. I'm based in Chandigarh,
-                        India, but I'm happy to working remotely and have experience in remote teams. However,
-                        I'm open to relocating since I prefer working physically. When I'm not coding, you'll find me 
-                        playing guitar or piano, and sometimes writing poems and songs. I love traveling and being out in nature whether that's 
-                        going for a walk or contemplating the nature; I also appreciate being alone. I'd love you to 
-                        check out my work.
-                    </p>
-                    <button className="go-to">
-                        Go to portfolio
-                    </button>
+                    <div className="info_container">
+                        <h2>About Me</h2>
+                        <p className="description">
+                            I'm a junior front-end developer looking for a new role in an exciting 
+                            company. I focus on writing accessible HTML, using modern CSS practices 
+                            and writing clean JavaScript. When writing JavaScript code, I mostly use 
+                            React, but I can adapt to whatever tools are required. I'm based in Chandigarh,
+                            India, but I'm happy to working remotely. However,
+                            I'm open to relocating. When I'm not coding, you'll find me 
+                            playing guitar or piano, and sometimes writing poems and songs. I'd love you to 
+                            check out my work.
+                        </p>
+                        <button className="go-to" onClick={ event => { this.props.changePage('PROFILE')}}>
+                            Go to portfolio
+                        </button>
+                    </div>
                 </div>
             </div>
         );

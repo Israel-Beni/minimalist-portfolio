@@ -1,7 +1,79 @@
 .AboutMe {
+    height: 37.5rem;
+    width: 63.4375rem;
+    position: relative;
+    display: flex;
 }
 
-.AboutMe .info .go-to {
+.AboutMe .image_container {
+    width: 33.75rem;
+    height: 37.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0;
+}
+
+.AboutMe .separator {
+    flex: 1;
+}
+
+.AboutMe .image_container img {
+    width: 33.75rem;
+    height: 37.5rem;
+    object-fit: cover;
+}
+
+.AboutMe .info {
+    width: 21.875rem;
+    height: 37.5rem;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgb(51, 50, 61, .15);
+    border-bottom: 1px solid rgb(51, 50, 61, .15);
+}
+
+.AboutMe .info .info_container {
+    width: 100%;
+}
+
+.AboutMe .info_container h2 {
+    height: 2.625rem;
+    width: 100%;
+    font-family: "Ibarra Real Nova";
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 2.625rem;
+    letter-spacing: -.36px;
+    margin-bottom: 1.75rem;
+    color: #33323D;
+
+}
+
+.AboutMe .info_container .description {
+    font-family: "Public Sans";
+    font-size: 1rem;
+    /*font-weight: 100;*/
+    line-height: 1.875rem;
+    color: rgb(51, 50, 61, .8);
+    margin-bottom: 1.5rem;
+}
+
+.AboutMe .info .info_container .go-to {
     text-transform: uppercase;
-    background-color: none;
+    background-color: transparent;
+    border: 1px solid #33323D;
+    width: 12.625rem;
+    height: 3rem;
+    font-family: "Public Sans";
+    /*font-weight: 100;*/
+    font-size: .75rem;
+    line-height: .875rem;
+    letter-spacing: 2px; 
+    color: #33323D;
+    cursor: pointer;
+}
+
+.AboutMe .go-to:hover {
+    background-color: #EAEAEB;
 }

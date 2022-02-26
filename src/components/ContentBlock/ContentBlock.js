@@ -20,13 +20,13 @@ class ContentBlock extends React.Component {
     }*/
 
     render() {
-        const currentPage = this.props.currentPage;
+        const currentPage = this.props.getCurrentPage();
         if (currentPage.toLowerCase() === 'home') {
             return (
                 <div className="ContentBlock">
                     <Banner />
                     <div className="separator"></div>
-                    <AboutMe />
+                    <AboutMe changePage={this.props.changePage} />
                 </div>
             );
         }

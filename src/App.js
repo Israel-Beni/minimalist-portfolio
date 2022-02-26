@@ -6,12 +6,21 @@ import ContentBlock from './components/ContentBlock/ContentBlock';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.currentPage ='HOME'
+    this.state = {
+      currentPage: 'HOME'
+    }
     this.changePage = this.changePage.bind(this);
+    this.getCurrentPage = this.getCurrentPage.bind(this);
   }
 
   changePage(currentPage) {
-    this.currentPage = currentPage;
+    this.setState({
+      currentPage: currentPage
+    })
+  }
+
+  getCurrentPage() {
+    return this.state.currentPage;
   }
 
   render() {
@@ -20,7 +29,7 @@ class App extends React.Component {
         <div className="separator_1"></div>
         <Header changePage={this.changePage} />
         <div className="separator_2"></div>
-        <ContentBlock currentPage={this.currentPage}/>
+        <ContentBlock changePage={this.changePage} getCurrentPage={this.getCurrentPage} />
         <div className="separator_3"></div>
 
       </div>
