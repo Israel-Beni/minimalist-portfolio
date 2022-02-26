@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import ContentBlock from './components/ContentBlock/ContentBlock';
+import Footer from './Components/Footer/Footer';
 
 class App extends React.Component {
   constructor(props) {
@@ -31,7 +32,7 @@ class App extends React.Component {
         <div className="separator_2"></div>
         <ContentBlock changePage={this.changePage} getCurrentPage={this.getCurrentPage} />
         <div className="separator_3"></div>
-        <
+        <Footer changePage={this.changePage} getCurrentPage={this.getCurrentPage} />
       </div>
     );
   }
