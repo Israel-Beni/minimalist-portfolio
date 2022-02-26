@@ -7,6 +7,7 @@ class Footer extends React.Component {
         return (
             <div class="Footer">
                 <ContactLink />
+                
             </div>
         );
     }
