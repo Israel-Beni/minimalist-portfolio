@@ -11,4 +11,8 @@
     .ContentBlock {
         width: 43rem;
     }
+
+    .ContentBlock .separator {
+        height: 6rem;
+    }
 }

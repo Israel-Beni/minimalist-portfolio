@@ -18,4 +18,12 @@
     .App .separator_1 {
         height: 2.9875rem;
     }
+
+    .App .separator_2 {
+        height: 2.9375rem;
+    }
+
+    .App .separator_3 {
+        height: 6rem;
+    }
 }

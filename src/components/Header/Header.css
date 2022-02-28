@@ -5,6 +5,7 @@
     width: 69.4375rem;
     height: 2rem;
     margin: auto;
+    position: relative;
 }
 
 .header .logo_container, .logo_container img {
@@ -19,6 +20,10 @@
 .header .navigation_menu {
     flex:  0 0 auto;
     color: #33323D;
+}
+
+.header .icon_container {
+    display: none;
 }
 
 .header .navigation_menu li {
@@ -40,5 +45,37 @@
 @media only screen and (max-width: 1130px) {
     .header {
         width: 43rem;
+    }
+}
+
+@media only screen and (max-width: 705px) {
+    .header {
+        width: 19.4375rem;
+    }
+
+    .header .icon_container {
+        display: inline;
+        cursor: pointer;
+    }
+
+    .header .navigation_menu, .header ul {
+        display: none;
+        position: absolute;
+        top: 2rem;
+        right: 0;
+        width: 13.9375rem;
+        height: 11.625rem;
+        padding: 2.5rem 0;
+        background-color: #33323D;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1;
+        font-weight: 100;
+    }
+
+    .header .navigation_menu li {
+        color: white;
+        margin: 0;
     }
 }
