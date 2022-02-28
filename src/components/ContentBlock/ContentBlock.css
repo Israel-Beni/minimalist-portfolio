@@ -6,3 +6,9 @@
 .ContentBlock .separator {
     height: 9.375rem;
 }
+
+@media only screen and (max-width: 1130px) {
+    .ContentBlock {
+        width: 43rem;
+    }
+}

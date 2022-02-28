@@ -77,3 +77,23 @@
 .AboutMe .go-to:hover {
     background-color: #EAEAEB;
 }
+
+@media only screen and (max-width: 1130px) {
+    .AboutMe {
+        width: 43.0625rem;
+    }
+
+    .AboutMe .image_container {
+        width: 17.5625rem;
+        
+    }
+
+    .AboutMe .image_container img {
+        width: 17.5625rem;
+        object-fit: cover;
+    }
+
+    .AboutMe .info {
+        width: 21.1875rem;
+    }
+}

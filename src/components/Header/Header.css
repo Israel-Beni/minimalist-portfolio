@@ -36,3 +36,9 @@
 .active {
     color: #5FB4A2 !important;
 }
+
+@media only screen and (max-width: 1130px) {
+    .header {
+        width: 43rem;
+    }
+}

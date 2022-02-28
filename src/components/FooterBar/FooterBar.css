@@ -60,5 +60,9 @@
     margin-left: 1rem;
 }
 
-
+@media only screen and (max-width: 1130px) {
+    .FooterBar .container {
+        width: 43.0625rem;
+    }
+}
 
