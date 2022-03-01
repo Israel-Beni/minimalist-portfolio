@@ -27,3 +27,17 @@
         height: 6rem;
     }
 }
+
+@media only screen and (max-width: 705px) {
+    .App .separator_1 {
+        height: 2rem;
+    }
+
+    .App .separator_2 {
+        height: 2.5rem;
+    }
+
+    .App .separator_3 {
+        height: 7.1875rem;
+    }
+}

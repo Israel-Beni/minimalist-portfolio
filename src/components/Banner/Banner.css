@@ -88,12 +88,37 @@
 }
 
 @media only screen and (max-width: 1130px) {
+    .Banner {
+        background-image: url("../../images/homepage/tablet/image-homepage-hero@2x.jpg");
+    }
     .Banner .Banner_text {
         width: 32.125rem;
         height: 17.375rem;
     }
 
     .Banner .Banner_text .hero_text {
+        font-size: 2.5rem;
+        line-height: 2.625rem;
+        letter-spacing: -.36px;
+    }
+}
+
+@media only screen and (max-width: 705px) {
+    .Banner {
+        background-image: url("../../images/homepage/mobile/image-homepage-hero@2x.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top;
+        width: 19.4375rem;
+        height: 33.9375rem;
+    }
+
+    .Banner .Banner_text {
+        width: 19.4375rem;
+        height: 16.5rem;
+    }
+
+    .Banner .Banner_text .hero_text  {
         font-size: 2.5rem;
         line-height: 2.625rem;
         letter-spacing: -.36px;

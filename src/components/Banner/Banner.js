@@ -1,11 +1,12 @@
 import React from 'react';
 import './Banner.css';
 import down_arrows from '../../images/icons/down-arrows.svg';
+import heroImage from "../../images/homepage/desktop/image-homepage-hero.jpg";
 
 class Banner extends React.Component {
     render() {
         return (
-            <div className="Banner" id="Banner">
+            <section className="Banner" id="Banner">
                 <div className="Banner_text">
                     <div className="hero_text">
                         <h1>Hey, I'm Israel Ben T. Degbe and I love building beautiful websites</h1>
@@ -19,7 +20,7 @@ class Banner extends React.Component {
                         <span>About Me</span>
                     </button>
                 </div>
-            </div>
+            </section>
         );
     }
 

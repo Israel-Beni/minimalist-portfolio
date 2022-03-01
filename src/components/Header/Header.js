@@ -102,7 +102,7 @@ class Header extends React.Component {
 
     render() {
         return (
-            <div className="header">
+            <section className="header">
                 <div className="logo_container">
                     <img src={logo} alt="logo" />
                 </div>
@@ -113,7 +113,7 @@ class Header extends React.Component {
                 <ul className="navigation_menu">
                     {this.renderMenu()}
                 </ul>
-            </div>
+            </section>
         );
     }
 };
