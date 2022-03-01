@@ -85,7 +85,6 @@
 
     .AboutMe .image_container {
         width: 17.5625rem;
-        
     }
 
     .AboutMe .image_container img {
@@ -95,5 +94,34 @@
 
     .AboutMe .info {
         width: 21.1875rem;
+    }
+}
+
+@media only screen and (max-width: 705px) {
+    .AboutMe {
+        width: 19.4375rem;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .AboutMe .image_container {
+        width: inherit;
+        height: 21.625rem;
+    }
+
+    .AboutMe .image_container img {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+    }
+
+    .AboutMe .separator {
+        flex: 0 0 2rem;
+    }
+
+    .AboutMe .info {
+        width: inherit;
+        padding-top: 2rem;
+        padding-bottom: 3.1875rem;
     }
 }
