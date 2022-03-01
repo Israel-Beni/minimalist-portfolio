@@ -44,3 +44,22 @@
         margin-bottom: 6rem;
     }
 }
+
+@media only screen and (max-width: 705px) {
+    .ContactLink {
+        width: 19.4375rem;
+        height: 13.375rem;
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+
+    .ContactLink .info {
+        width: inherit;
+        text-align: center;
+    }
+
+    .ContactLink .separator {
+        margin: 0;
+        border-bottom: none;
+    }
+}
