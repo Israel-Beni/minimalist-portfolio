@@ -44,11 +44,11 @@ class Header extends React.Component {
 
     renderDropdownMenu() {
         return this.state.dropdownMenu === 'open' ? (
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19">
+                <svg onClick={this.handleMenuClick} xmlns="http://www.w3.org/2000/svg" width="18" height="19">
                     <path fill="#33323D" fillRule="evenodd" d="M17.132.661l.707.707L9.707 9.5l8.132 8.132-.707.707L9 10.207.868 18.34l-.707-.707L8.293 9.5.161 1.368.868.661 9 8.793 17.132.661z"/>
                 </svg>
             ) : (
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="13">
+                <svg onClick={this.handleMenuClick} xmlns="http://www.w3.org/2000/svg" width="24" height="13">
                     <g fill="#33323D" fillRule="evenodd">
                         <path d="M0 0h24v1H0zM0 6h24v1H0zM0 12h24v1H0z" />
                     </g>
@@ -57,13 +57,31 @@ class Header extends React.Component {
     }
 
     toggleDropdownMenuDisplay() {
-        this.state.dropdownMenu === 'closed' ? 
-            document.querySelector(' .navigation_menu').style.display = 'flex' : 
+        const navMenu = document.querySelector(' .navigation_menu');
+        const firstOption = () => {
+            navMenu.style.display = 'flex';
+            navMenu.style.padding = '2.5rem 0';
+            navMenu.style.height = '6.625rem';
+        }
+
+        const secondOption = () => {
+            navMenu.style.padding = '0';
+            navMenu.style.height = '0';
+            navMenu.style.display = 'flex';
+        }
+        this.state.dropdownMenu === 'closed' ? firstOption() : secondOption();
+        /*
             document.querySelector(' .navigation_menu').style.display = 'none';
+        this.state.dropdownMenu === 'closed' ? 
+            document.querySelector(' .navigation_menu').style.height = '11.625rem;' : 
+            document.querySelector(' .navigation_menu').style.height = '0';
+        this.state.dropdownMenu === 'closed' ? 
+            document.querySelector(' .navigation_menu').style.padding = '2.5rem 0' : 
+            document.querySelector(' .navigation_menu').style.padding = '0';*/
     }
 
     handleMenuClick() {
-        console.log(document.querySelector('.header .navigation_menu '));
+        console.log(document.querySelector('.header .navigation_menu'));
         this.toggleDropdownMenuDisplay();
         this.toggleDropdownMenuState();
     }
@@ -89,7 +107,7 @@ class Header extends React.Component {
                     <img src={logo} alt="logo" />
                 </div>
                 <div className="separator"></div>
-                <div className="icon_container" onClick={this.handleMenuClick}>
+                <div className="icon_container">
                     {this.renderDropdownMenu()}
                 </div>
                 <ul className="navigation_menu">

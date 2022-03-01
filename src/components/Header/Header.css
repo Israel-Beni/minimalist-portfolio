@@ -58,20 +58,28 @@
         cursor: pointer;
     }
 
-    .header .navigation_menu, .header ul {
+    .header svg:active {
+        background-color: blue;
+    }
+
+
+    .header .navigation_menu {
         display: none;
         position: absolute;
         top: 2rem;
         right: 0;
         width: 13.9375rem;
-        height: 11.625rem;
-        padding: 2.5rem 0;
+        height: 0rem;
+        padding: 0;
         background-color: #33323D;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         z-index: 1;
         font-weight: 100;
+        overflow: hidden;
+        box-sizing: content-box;
+        transition: padding .2s ease-in, height .2s ease-in;
     }
 
     .header .navigation_menu li {
