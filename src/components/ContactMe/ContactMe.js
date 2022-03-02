@@ -1,6 +1,6 @@
 import React from 'react';
 import './ContactMe.css';
-import '../GetInTouch/GetInTouch';
+import GetInTouch from '../GetInTouch/GetInTouch';
 
 class ContactMe extends React.Component {
     render() {
