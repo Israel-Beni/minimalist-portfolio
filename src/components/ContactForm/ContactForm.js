@@ -6,15 +6,21 @@ class ContactForm extends React.Component {
         return (
             <section className="ContactForm">
                 <h2>Contact Me</h2>
+                <div className="separator"></div>
                 <form action="">
-                    <label for="name">Name</label><br />
-                    <input id="name" name="name" type="text" placeholder="Jane Appleseed" /><br />
-                    <label for="email">Email Address</label><br />
-                    <input id="email" name="email" type="email" placeholder="email@example.com" /><br />
-                    <label for="message">Message</label><br />
-                    <textarea id="message" name="message">
-                        How can I help?
-                    </textarea>
+                    <div>
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" placeholder="Jane Appleseed" />
+                    </div>
+                    <div>
+                        <label for="email">Email Address</label>
+                        <input id="email" name="email" type="email" placeholder="email@example.com" />
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="How can I help?" />
+                    </div>
+                    <input type="submit" class="submit" value="Submit Message"/>
                 </form>
             </section>
         );
