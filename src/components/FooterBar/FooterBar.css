@@ -42,6 +42,7 @@
     margin-right: 2.625rem;
     line-height: .875rem;
     font-family: "Public Sans";
+    font-size: .75rem;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: 100;
@@ -67,5 +68,59 @@
 }
 
 @media only screen and (max-width: 705px) {
-    
+    .FooterBar {
+        height: 22.125rem;
+        justify-content: center;
+    }
+
+    .FooterBar .container {
+        width: 6.5rem;
+        height: 15.125rem;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .FooterBar .container .links {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .FooterBar .container .logo-container {
+        display: block;
+    }
+
+    .FooterBar .container .menu {
+        flex-direction: column;
+        margin: 0;
+        margin-top: 2.5rem;
+        height: 6.625rem;
+        width: 6.125rem;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Footer .container .menu li {
+        margin: 0;
+    }
+
+    .FooterBar .separator {
+        flex: 1 0;
+        height: 1rem;
+    }
+
+    .FooterBar .social-media {
+        flex: 0 1 6.5rem;
+        width: 6.5rem;
+        height: 1.5rem;
+        display: flex;
+        position: relative;
+        top: 2.5rem;
+        
+    }
+
+    .FooterBar .social-media a:first-child {
+        margin-left: 0;
+    }
 }
