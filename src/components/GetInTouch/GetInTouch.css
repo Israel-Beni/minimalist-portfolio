@@ -1,0 +1,55 @@
+.GetInTouch {
+    height: 22.125rem;
+    width: 100%;
+    margin-top: 2.5rem;
+    margin-bottom: 2.9375rem;
+    border-top: 1px solid rgb(51, 50, 61, .15);
+    border-bottom: 1px solid rgb(51, 50, 61, .15);
+    display: flex;
+    align-items: center;
+}
+
+.GetInTouch .container {
+    width: inherit;
+    height: 16.125rem;
+    display: flex;
+}
+
+.GetInTouch .container h2 {
+    flex: 0 0 21.875rem;
+    font-family: "Ibarra Real Nova";
+    font-size: 2.5rem;
+    line-height: 2.625rem;
+    font-weight: bold;
+    letter-spacing: -.36px;
+    color: #33323D;
+}
+
+.GetInTouch .info {
+    flex: 0 0 39.6875rem;
+    height: 16.125rem;
+}
+
+.GetInTouch .info .description {
+    height: 13.125rem;
+    font-family: "Public Sans";
+    font-size: 1rem;
+    line-height: 1.875rem;
+    color: rgb(51, 50, 61, .8);
+    margin-bottom: 1.5rem;
+}
+
+.GetInTouch .separator {
+    flex: 1;
+}
+
+.GetInTouch .social-media {
+    display: flex;
+    align-items: center;
+    height: 1.5rem;
+}
+
+.GetInTouch .social-media a {
+    margin-right: 1rem;
+}
+

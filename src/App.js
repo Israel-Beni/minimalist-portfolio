@@ -8,7 +8,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentPage: 'HOME'
+      currentPage: 'CONTACT ME'
     }
     this.changePage = this.changePage.bind(this);
     this.getCurrentPage = this.getCurrentPage.bind(this);

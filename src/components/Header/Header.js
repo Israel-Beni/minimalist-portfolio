@@ -6,7 +6,7 @@ class Header extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            currentPage: 'HOME',
+            currentPage: 'CONTACT ME',
             dropdownMenu: 'closed'
         }
         this.menuItems = {
