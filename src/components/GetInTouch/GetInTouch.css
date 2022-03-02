@@ -56,7 +56,7 @@
 @media only screen and (max-width: 1130px) {
     .GetInTouch {
         height: 22.375rem;
-        margin-bottom: 2rem;
+        margin-top: 2.9375rem;
         flex-direction: column;
         justify-content: center;    
     }
@@ -80,6 +80,37 @@
 
     .GetInTouch .info .description {
         height: 11.25rem;
+        font-size: .9375rem;
+    }
+}
+
+@media only screen and (max-width: 705px) {
+    .GetInTouch {
+        height: 35rem;
+        margin-bottom: 2.9375rem;
+        flex-direction: column;
+        justify-content: center;    
+    }
+
+    .GetInTouch .container {
+        display: block;
+        height: 31.5rem;
+    }
+
+    .GetInTouch .container h2 {
+        width: 100%;
+    }
+
+    .GetInTouch .separator {
+        height: 1.5rem;
+    }
+
+    .GetInTouch .info {
+        height: 27.375rem;
+    }
+
+    .GetInTouch .info .description {
+        height: 24.375rem;
         font-size: .9375rem;
     }
 }
