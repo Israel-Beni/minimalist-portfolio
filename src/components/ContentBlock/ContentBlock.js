@@ -2,6 +2,7 @@ import React from 'react';
 import './ContentBlock.css';
 import Banner from '../Banner/Banner';
 import AboutMe from '../AboutMe/AboutMe';
+import ContactMe from '../ContactMe/ContactMe';
 
 class ContentBlock extends React.Component {
     constructor(props) {
@@ -27,6 +28,12 @@ class ContentBlock extends React.Component {
                     <Banner />
                     <div className="separator"></div>
                     <AboutMe changePage={this.props.changePage} />
+                </main>
+            );
+        } else if (currentPage.toLowerCase() === 'contact me') {
+            return (
+                <main className="ContentBlock">
+                    <ContactMe />
                 </main>
             );
         }
