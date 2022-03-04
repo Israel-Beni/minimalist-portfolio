@@ -5,12 +5,21 @@ import FooterBar from '../FooterBar/FooterBar';
 
 class Footer extends React.Component {
     render() {
-        return (
-            <div className="Footer">
-                <ContactLink />
-                <FooterBar changePage={this.props.changePage} />
-            </div>
-        );
+        const currentPage = this.props.getCurrentPage();
+        if (currentPage.toLowerCase().trim().replace(/ /, '-') === 'contact-me') {
+            return (
+                <div className="Footer">
+                    <FooterBar changePage={this.props.changePage} />
+                </div>
+            );
+        } else {
+            return (
+                <div className="Footer">
+                    <ContactLink />
+                    <FooterBar changePage={this.props.changePage} />
+                </div>
+            );
+        }
     }
 };
 
