@@ -3,6 +3,9 @@ import './ContentBlock.css';
 import Banner from '../Banner/Banner';
 import AboutMe from '../AboutMe/AboutMe';
 import ContactMe from '../ContactMe/ContactMe';
+import Portfolio from '../Portfolio/Portfolio';
+
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 class ContentBlock extends React.Component {
     constructor(props) {
@@ -25,15 +28,21 @@ class ContentBlock extends React.Component {
         if (currentPage.toLowerCase() === 'home') {
             return (
                 <main className="ContentBlock">
-                    <Banner />
-                    <div className="separator"></div>
-                    <AboutMe changePage={this.props.changePage} />
+                        <Banner />
+                        <div className="separator"></div>
+                        <AboutMe changePage={this.props.changePage} />
                 </main>
             );
         } else if (currentPage.toLowerCase() === 'contact me') {
             return (
                 <main className="ContentBlock">
                     <ContactMe />
+                </main>
+            );
+        } else if (currentPage.toLowerCase() === 'portfolio') {
+            return (
+                <main className="ContentBlock">
+                    <Portfolio />
                 </main>
             );
         }

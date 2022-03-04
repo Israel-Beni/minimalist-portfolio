@@ -38,8 +38,32 @@
     height: .875rem;
 }
 
+.header .navigation_menu li {
+    display: inline;
+    margin-left: 2.625rem;
+    cursor: pointer;
+    /* font-weight: 100;*/
+    font-size: .75rem;
+    line-height: .875rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    height: .875rem;
+}
+
+.header .navigation_menu li a {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: inherit;
+    width: inherit;
+    height: inherit;
+}
+
 .active {
     color: #5FB4A2 !important;
+}
+
+.isActive {
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 1130px) {

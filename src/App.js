@@ -4,11 +4,13 @@ import Header from './components/Header/Header';
 import ContentBlock from './components/ContentBlock/ContentBlock';
 import Footer from './components/Footer/Footer';
 
+import { BrowserRouter as Router, Route } from 'react-router-dom';  
+
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentPage: 'CONTACT ME'
+      currentPage: 'HOME'
     }
     this.changePage = this.changePage.bind(this);
     this.getCurrentPage = this.getCurrentPage.bind(this);

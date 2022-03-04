@@ -2,11 +2,13 @@ import React from 'react';
 import './Header.css';
 import logo from '../../images/logo.svg';
 
+import { NavLink } from 'react-router-dom';
+
 class Header extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            currentPage: 'CONTACT ME',
+            currentPage: 'HOME',
             dropdownMenu: 'closed'
         }
         this.menuItems = {
@@ -94,8 +96,11 @@ class Header extends React.Component {
                         onClick={ event => {
                             this.handlePageChange(menuItemValue)
                             }
-                        }
-                    >{menuItemValue}</li>;
+                        }>
+                        <NavLink to={`/${menuItemValue.trim().replace(/ /, '-').toLowerCase()}`}>
+                            {menuItemValue}
+                        </NavLink>
+                    </li>
         });
     }
 
