@@ -105,3 +105,19 @@
         width: 43.0625rem;
     }
 }
+
+@media only screen and (max-width: 705rem) {
+    .ContactForm {
+        height: 30.75rem;
+        width: 19.4375rem;
+    }
+
+    .ContactForm h2 {
+        width: 100%;
+    }
+
+    .ContactForm form {
+        height: 28.125rem;
+        width: 100%;
+    }
+}
