@@ -4,7 +4,7 @@ import Header from './components/Header/Header';
 import ContentBlock from './components/ContentBlock/ContentBlock';
 import Footer from './components/Footer/Footer';
 
-import { BrowserRouter as Router, Route } from 'react-router-dom';  
+import { BrowserRouter as Router } from 'react-router-dom';
 
 class App extends React.Component {
   constructor(props) {
@@ -28,14 +28,16 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
-        <div className="separator_1"></div>
-        <Header changePage={this.changePage} />
-        <div className="separator_2"></div>
-        <ContentBlock changePage={this.changePage} getCurrentPage={this.getCurrentPage} />
-        <div className="separator_3"></div>
-        <Footer changePage={this.changePage} getCurrentPage={this.getCurrentPage} />
-      </div>
+      <Router>
+        <div className="App">
+          <div className="separator_1"></div>
+          <Header changePage={this.changePage} />
+          <div className="separator_2"></div>
+          <ContentBlock changePage={this.changePage} getCurrentPage={this.getCurrentPage} />
+          <div className="separator_3"></div>
+          <Footer changePage={this.changePage} getCurrentPage={this.getCurrentPage} />
+        </div>
+      </Router>
     );
   }
 };

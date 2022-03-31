@@ -5,8 +5,6 @@ import AboutMe from '../AboutMe/AboutMe';
 import ContactMe from '../ContactMe/ContactMe';
 import Portfolio from '../Portfolio/Portfolio';
 
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-
 class ContentBlock extends React.Component {
     constructor(props) {
         super(props);

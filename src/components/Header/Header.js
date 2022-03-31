@@ -16,6 +16,7 @@ class Header extends React.Component {
             portfolio: 'PORTFOLIO',
             contact: 'CONTACT ME'
         }
+        this.currentPage = 'HOME';
         this.activateMenuItem = this.activateMenuItem.bind(this);
         this.handlePageChange = this.handlePageChange.bind(this); // sets this.state.page
         this.renderMenu = this.renderMenu.bind(this);
@@ -23,6 +24,8 @@ class Header extends React.Component {
         this.renderDropdownMenu = this.renderDropdownMenu.bind(this);
         this.toggleDropdownMenuDisplay = this.toggleDropdownMenuDisplay.bind(this);
         this.handleMenuClick = this.handleMenuClick.bind(this);
+        this.activateRightMenuItem = this.activateRightMenuItem.bind(this);
+        this.handleRefresh = this.handleRefresh.bind(this);
     }
 
     activateMenuItem(menuItem) {
@@ -33,6 +36,7 @@ class Header extends React.Component {
         this.setState({
             currentPage: menuItem
         });
+        this.currentPage = menuItem;
         this.props.changePage(menuItem);
     }
 
@@ -87,17 +91,37 @@ class Header extends React.Component {
         this.toggleDropdownMenuDisplay();
         this.toggleDropdownMenuState();
     }
+    
+    activateRightMenuItem(activeMenuItems, menuItemValue) {
+        console.log(localStorage)
+        activeMenuItems.push(menuItemValue);
+        if (activeMenuItems.length >= 2) {
+            console.log('array', activeMenuItems);
+            document.addEventListener('readystatechange', event => {
+                this.handlePageChange(menuItemValue)
+            });
+        }
+
+    }
+
+    handleRefresh() {
+        
+    }
 
     renderMenu() {
+        console.log('this.state.currentPage', this.state.currentPage);
+        console.log('this.currentPage', this.currentPage);
+        const activeMenuItems = []
         return Object.keys(this.menuItems).map( menuItem => {
             const menuItemValue = this.menuItems[menuItem];
+                            {this.activateRightMenuItem(activeMenuItems, menuItemValue)}
             return <li  key={menuItemValue}
                         className={this.activateMenuItem(menuItemValue)}
                         onClick={ event => {
-                            this.handlePageChange(menuItemValue)
+                                this.handlePageChange(menuItemValue)
                             }
                         }>
-                        <NavLink to={`/${menuItemValue.trim().replace(/ /, '-').toLowerCase()}`}>
+                        <NavLink    to={`/${menuItemValue.trim().replace(/ /, '-').toLowerCase()}`}>
                             {menuItemValue}
                         </NavLink>
                     </li>

@@ -93,7 +93,7 @@
 @media only screen and (max-width: 1130px) {
     .ContactForm {
         height: 31.25rem;
-        flex-direction: column;
+        flex-direction:  column;
     }
 
     .ContactForm h2 {
@@ -106,7 +106,7 @@
     }
 }
 
-@media only screen and (max-width: 705rem) {
+@media only screen and (max-width: 705px) {
     .ContactForm {
         height: 30.75rem;
         width: 19.4375rem;
@@ -118,6 +118,6 @@
 
     .ContactForm form {
         height: 28.125rem;
-        width: 100%;
+        width: inherit;
     }
 }

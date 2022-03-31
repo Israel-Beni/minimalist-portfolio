@@ -9,18 +9,18 @@ class ContactForm extends React.Component {
                 <div className="separator"></div>
                 <form action="">
                     <div>
-                        <label for="name">Name</label>
+                        <label htmlFor="name">Name</label>
                         <input id="name" name="name" type="text" placeholder="Jane Appleseed" />
                     </div>
                     <div>
-                        <label for="email">Email Address</label>
+                        <label htmlFor="email">Email Address</label>
                         <input id="email" name="email" type="email" placeholder="email@example.com" />
                     </div>
                     <div>
-                        <label for="message">Message</label>
+                        <label htmlFor="message">Message</label>
                         <textarea id="message" name="message" placeholder="How can I help?" />
                     </div>
-                    <input type="submit" class="submit" value="Submit Message"/>
+                    <input type="submit" className="submit" value="Submit Message"/>
                 </form>
             </section>
         );
