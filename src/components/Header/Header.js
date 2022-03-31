@@ -17,8 +17,8 @@ class Header extends React.Component {
             contact: 'CONTACT ME'
         }
         this.currentPage = 'HOME';
-        this.activateMenuItem = this.activateMenuItem.bind(this);
-        this.handlePageChange = this.handlePageChange.bind(this); // sets this.state.page
+        //this.activateMenuItem = this.activateMenuItem.bind(this);
+        //this.handlePageChange = this.handlePageChange.bind(this); // sets this.state.page
         this.renderMenu = this.renderMenu.bind(this);
         this.toggleDropdownMenuState = this.toggleDropdownMenuState.bind(this);
         this.renderDropdownMenu = this.renderDropdownMenu.bind(this);
@@ -28,6 +28,7 @@ class Header extends React.Component {
         this.handleRefresh = this.handleRefresh.bind(this);
     }
 
+    /*
     activateMenuItem(menuItem) {
         return this.state.currentPage === menuItem ? 'active' : '';
     }
@@ -38,7 +39,7 @@ class Header extends React.Component {
         });
         this.currentPage = menuItem;
         this.props.changePage(menuItem);
-    }
+    }*/
 
     toggleDropdownMenuState() {
         return this.state.dropdownMenu === 'open' ? this.setState({
@@ -76,14 +77,6 @@ class Header extends React.Component {
             navMenu.style.display = 'flex';
         }
         this.state.dropdownMenu === 'closed' ? firstOption() : secondOption();
-        /*
-            document.querySelector(' .navigation_menu').style.display = 'none';
-        this.state.dropdownMenu === 'closed' ? 
-            document.querySelector(' .navigation_menu').style.height = '11.625rem;' : 
-            document.querySelector(' .navigation_menu').style.height = '0';
-        this.state.dropdownMenu === 'closed' ? 
-            document.querySelector(' .navigation_menu').style.padding = '2.5rem 0' : 
-            document.querySelector(' .navigation_menu').style.padding = '0';*/
     }
 
     handleMenuClick() {
@@ -114,14 +107,10 @@ class Header extends React.Component {
         const activeMenuItems = []
         return Object.keys(this.menuItems).map( menuItem => {
             const menuItemValue = this.menuItems[menuItem];
-                            {this.activateRightMenuItem(activeMenuItems, menuItemValue)}
-            return <li  key={menuItemValue}
-                        className={this.activateMenuItem(menuItemValue)}
-                        onClick={ event => {
-                                this.handlePageChange(menuItemValue)
-                            }
-                        }>
-                        <NavLink    to={`/${menuItemValue.trim().replace(/ /, '-').toLowerCase()}`}>
+            return <li  key={menuItemValue}>
+                        <NavLink    to={`/${menuItemValue.trim().replace(/ /, '-').toLowerCase()}`}
+                                    activeClassName="active"
+                                    exact>
                             {menuItemValue}
                         </NavLink>
                     </li>
