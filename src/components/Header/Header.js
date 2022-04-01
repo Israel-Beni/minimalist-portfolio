@@ -18,7 +18,6 @@ class Header extends React.Component {
             contact: 'CONTACT ME'
         }
         this.currentPage = 'HOME';
-        this.activateHomeMenuItem = this.activateHomeMenuItem.bind(this);
         //this.handlePageChange = this.handlePageChange.bind(this); // sets this.state.page
         this.renderMenu = this.renderMenu.bind(this);
         this.toggleDropdownMenuState = this.toggleDropdownMenuState.bind(this);
@@ -27,13 +26,6 @@ class Header extends React.Component {
         this.handleMenuClick = this.handleMenuClick.bind(this);
         this.activateRightMenuItem = this.activateRightMenuItem.bind(this);
         this.handleRefresh = this.handleRefresh.bind(this);
-    }
-
-    activateHomeMenuItem(menuItemValue) {
-        const home = document.getElementById(menuItemValue)
-        console.log('home: ', home);
-        console.log(home.getAttribute('class'));
-        menuItemValue === 'home' ? home.setAttribute('class', 'active') : console.log();
     }
 
     /*
@@ -106,7 +98,7 @@ class Header extends React.Component {
     }
     componentDidMount() {
         console.log('Hello from ComponentDidMount in Header component');
-        this.activateHomeMenuItem('home');
+        this.props.activateHomeMenuItem('home');
     }
 
     renderMenu() {

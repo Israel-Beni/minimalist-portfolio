@@ -8,12 +8,23 @@ import Portfolio from '../Portfolio/Portfolio';
 import { Route, Routes } from 'react-router-dom';
 
 class ContentBlock extends React.Component {
+    constructor(props) {
+        super(props);
+        this.deactivateHomeMenuItem = this.deactivateHomeMenuItem.bind(this);
+    }
+
+    deactivateHomeMenuItem(menuItemValue) {
+        const home = document.getElementById(menuItemValue)
+        console.log('home: ', home);
+        menuItemValue === 'home' ? home.removeAttribute('class') : console.log();
+        console.log(home.getAttribute('class'));
+}
     render() {
         return (
             <main className="ContentBlock">
                 <Routes>
-                    <Route path='/' element={<Banner />} />
-                    <Route path='/home' element={<Banner />} />
+                    <Route path='/' element={<Banner deactivateHomeMenuItem={this.props.deactivateHomeMenuItem} />} />
+                    <Route path='/home' element={<Banner deactivateHomeMenuItem={this.props.deactivateHomeMenuItem} />} />
                 </Routes>
 
                 <Routes>
@@ -26,10 +37,10 @@ class ContentBlock extends React.Component {
                     <Route path='/home' element={<AboutMe />} />
                 </Routes>
                 <Routes>
-                    <Route path='/contact-me' element={<ContactMe />} />
+                    <Route path='/contact-me' element={<ContactMe deactivateHomeMenuItem={this.props.deactivateHomeMenuItem} />} />
                 </Routes>
                 <Routes>
-                    <Route path='/portfolio' element={<Portfolio />} />
+                    <Route path='/portfolio' element={<Portfolio deactivateHomeMenuItem={this.props.deactivateHomeMenuItem} />} />
                 </Routes>
             </main>
         );

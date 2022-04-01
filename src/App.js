@@ -12,9 +12,23 @@ class App extends React.Component {
     this.state = {
       currentPage: 'HOME'
     }
+    this.isHomeActive = true;
     this.changePage = this.changePage.bind(this);
+    this.activateHomeMenuItem = this.activateHomeMenuItem.bind(this);
+    this.deactivateHomeMenuItem = this.deactivateHomeMenuItem.bind(this);
     this.getCurrentPage = this.getCurrentPage.bind(this);
   }
+
+
+  activateHomeMenuItem(menuItemValue) {
+    const home = document.getElementById(menuItemValue)
+    menuItemValue === 'home' ? home.setAttribute('class', 'active') : console.log();
+}
+
+deactivateHomeMenuItem(menuItemValue) {
+    const home = document.getElementById(menuItemValue)
+    menuItemValue === 'home'? home.removeAttribute('class') : console.log();
+}
 
   changePage(currentPage) {
     this.setState({
@@ -31,11 +45,18 @@ class App extends React.Component {
       <Router>
         <div className="App">
           <div className="separator_1"></div>
-          <Header changePage={this.changePage} />
+          <Header changePage={this.changePage}
+                  activateHomeMenuItem={this.activateHomeMenuItem}
+                  deactivateHomeMenuItem={this.deactivateHomeMenuItem}
+                  />
           <div className="separator_2"></div>
+
           <Routes>
-            <Route path='/*' element={<ContentBlock changePage={this.changePage} getCurrentPage={this.getCurrentPage} />} />
+            <Route path='/*' element={<ContentBlock changePage={this.changePage}
+                                                    getCurrentPage={this.getCurrentPage}
+                                                    deactivateHomeMenuItem={this.deactivateHomeMenuItem}/>} />
           </Routes>
+
           <div className="separator_3"></div>
           <Footer changePage={this.changePage} getCurrentPage={this.getCurrentPage} />
         </div>
