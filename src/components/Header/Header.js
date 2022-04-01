@@ -108,9 +108,9 @@ class Header extends React.Component {
         return Object.keys(this.menuItems).map( menuItem => {
             const menuItemValue = this.menuItems[menuItem];
             return <li  key={menuItemValue}>
-                        <NavLink    to={`/${menuItemValue.trim().replace(/ /, '-').toLowerCase()}`}
-                                    activeClassName="active"
-                                    exact>
+                        <NavLink    to={`${menuItemValue.trim().replace(/ /, '-').toLowerCase()}`}
+                                    activeclassname="active"
+                                    >
                             {menuItemValue}
                         </NavLink>
                     </li>
