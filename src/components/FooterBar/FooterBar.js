@@ -1,9 +1,5 @@
 import React from 'react';
 import './FooterBar.css';
-import logo from '../../images/logo.svg';
-import github from '../../images/icons/github.svg';
-import twitter from '../../images/icons/twitter.svg';
-import linkedin from '../../images/icons/linkedin.svg';
 
 class FooterBar extends React.Component {
     constructor(props) {

@@ -104,7 +104,6 @@ class Header extends React.Component {
     renderMenu() {
         console.log('this.state.currentPage', this.state.currentPage);
         console.log('this.currentPage', this.currentPage);
-        const activeMenuItems = []
         return Object.keys(this.menuItems).map( menuItem => {
             const menuItemValue = this.menuItems[menuItem];
             return <li  key={menuItemValue}
