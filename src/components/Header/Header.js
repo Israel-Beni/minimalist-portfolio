@@ -11,13 +11,14 @@ class Header extends React.Component {
             currentPage: 'HOME',
             dropdownMenu: 'closed'
         }
+        this.currentPage = 
         this.menuItems = {
             home: 'HOME',
             portfolio: 'PORTFOLIO',
             contact: 'CONTACT ME'
         }
         this.currentPage = 'HOME';
-        //this.activateMenuItem = this.activateMenuItem.bind(this);
+        this.activateHomeMenuItem = this.activateHomeMenuItem.bind(this);
         //this.handlePageChange = this.handlePageChange.bind(this); // sets this.state.page
         this.renderMenu = this.renderMenu.bind(this);
         this.toggleDropdownMenuState = this.toggleDropdownMenuState.bind(this);
@@ -28,11 +29,14 @@ class Header extends React.Component {
         this.handleRefresh = this.handleRefresh.bind(this);
     }
 
-    /*
-    activateMenuItem(menuItem) {
-        return this.state.currentPage === menuItem ? 'active' : '';
+    activateHomeMenuItem(menuItemValue) {
+        const home = document.getElementById(menuItemValue)
+        console.log('home: ', home);
+        console.log(home.getAttribute('class'));
+        menuItemValue === 'home' ? home.setAttribute('class', 'active') : console.log();
     }
 
+    /*
     handlePageChange(menuItem) {
         this.setState({
             currentPage: menuItem
@@ -100,6 +104,10 @@ class Header extends React.Component {
     handleRefresh() {
         
     }
+    componentDidMount() {
+        console.log('Hello from ComponentDidMount in Header component');
+        this.activateHomeMenuItem('home');
+    }
 
     renderMenu() {
         console.log('this.state.currentPage', this.state.currentPage);
@@ -107,7 +115,8 @@ class Header extends React.Component {
         const activeMenuItems = []
         return Object.keys(this.menuItems).map( menuItem => {
             const menuItemValue = this.menuItems[menuItem];
-            return <li  key={menuItemValue}>
+            return <li  key={menuItemValue}
+                        id={menuItemValue.toLowerCase()}>
                         <NavLink    to={`${menuItemValue.trim().replace(/ /, '-').toLowerCase()}`}
                                     activeclassname="active"
                                     >
