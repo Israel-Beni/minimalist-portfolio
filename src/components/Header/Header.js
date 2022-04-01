@@ -8,16 +8,13 @@ class Header extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            currentPage: 'HOME',
             dropdownMenu: 'closed'
         }
-        this.currentPage = 
         this.menuItems = {
             home: 'HOME',
             portfolio: 'PORTFOLIO',
             contact: 'CONTACT ME'
         }
-        this.currentPage = 'HOME';
         //this.handlePageChange = this.handlePageChange.bind(this); // sets this.state.page
         this.renderMenu = this.renderMenu.bind(this);
         this.toggleDropdownMenuState = this.toggleDropdownMenuState.bind(this);
@@ -27,15 +24,6 @@ class Header extends React.Component {
         this.activateRightMenuItem = this.activateRightMenuItem.bind(this);
         this.handleRefresh = this.handleRefresh.bind(this);
     }
-
-    /*
-    handlePageChange(menuItem) {
-        this.setState({
-            currentPage: menuItem
-        });
-        this.currentPage = menuItem;
-        this.props.changePage(menuItem);
-    }*/
 
     toggleDropdownMenuState() {
         return this.state.dropdownMenu === 'open' ? this.setState({
@@ -102,8 +90,6 @@ class Header extends React.Component {
     }
 
     renderMenu() {
-        console.log('this.state.currentPage', this.state.currentPage);
-        console.log('this.currentPage', this.currentPage);
         return Object.keys(this.menuItems).map( menuItem => {
             const menuItemValue = this.menuItems[menuItem];
             return <li  key={menuItemValue}
