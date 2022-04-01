@@ -52,9 +52,7 @@ deactivateHomeMenuItem(menuItemValue) {
           <div className="separator_2"></div>
 
           <Routes>
-            <Route path='/*' element={<ContentBlock changePage={this.changePage}
-                                                    getCurrentPage={this.getCurrentPage}
-                                                    deactivateHomeMenuItem={this.deactivateHomeMenuItem}/>} />
+            <Route path='/*' element={<ContentBlock deactivateHomeMenuItem={this.deactivateHomeMenuItem}/>} />
           </Routes>
 
           <div className="separator_3"></div>

@@ -1,6 +1,8 @@
 import React from 'react';
 import './FooterBar.css';
 
+import { Link } from 'react-router-dom';
+
 class FooterBar extends React.Component {
     constructor(props) {
         super(props);
@@ -15,12 +17,12 @@ class FooterBar extends React.Component {
     renderLinks() {
         return Object.keys(this.links).map( link => {
             const linkValue = this.links[link];
-            return <li key={linkValue}
-                        onClick={ event => {
-                                this.props.changePage(linkValue)
-                            }
-                        }
-                    >{linkValue}</li>
+            return <li key={linkValue}>
+                        <Link to={'/' + linkValue.trim().replace(/ /, '-').toLowerCase()}
+                              style={{color: "white", textDecoration: "none"}}>
+                            {linkValue}
+                        </Link>
+                    </li>
         })
     }
 
