@@ -4,6 +4,26 @@ import down_arrows from '../../images/icons/down-arrows.svg';
 import heroImage from "../../images/homepage/desktop/image-homepage-hero.jpg";
 
 class Banner extends React.Component {
+    constructor(props) {
+        super(props);
+        this.deactivateHomeMenuItem = this.deactivateHomeMenuItem.bind(this);
+    }
+
+    // To deactivate the Home menu item when as soon as Banner is unmounted
+    deactivateHomeMenuItem(menuItemValue) {
+        const home = document.getElementById(menuItemValue)
+        console.log('home: ', home);
+        menuItemValue === 'home' ? home.removeAttribute('class') : console.log();
+        console.log(home.getAttribute('class'));
+    }
+    componentDidMount() {
+        console.log('Hello ')
+    }
+
+    componentWillUnmount() {
+        console.log('Hello from ComponentDidUpdate in Header Banner');
+        this.deactivateHomeMenuItem('home');
+    }
     render() {
         return (
             <section className="Banner" id="Banner">
