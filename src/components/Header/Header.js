@@ -2,7 +2,7 @@ import React from 'react';
 import './Header.css';
 import logo from '../../images/logo.svg';
 
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 class Header extends React.Component {
     constructor(props) {
@@ -108,7 +108,9 @@ class Header extends React.Component {
         return (
             <section className="header">
                 <div className="logo_container">
-                    <img src={logo} alt="logo" />
+                    <Link to='/home'>
+                        <img src={logo} alt="logo" />
+                    </Link>
                 </div>
                 <div className="separator"></div>
                 <div className="icon_container">
