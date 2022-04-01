@@ -3,6 +3,8 @@ import './Footer.css';
 import ContactLink from '../ContactLink/ContactLink';
 import FooterBar from '../FooterBar/FooterBar';
 
+import { Routes, Route } from 'react-router-dom';
+
 class Footer extends React.Component {
     render() {
         const currentPage = this.props.getCurrentPage();
@@ -15,7 +17,11 @@ class Footer extends React.Component {
         } else {
             return (
                 <div className="Footer">
-                    <ContactLink />
+                    <Routes>
+                        <Route path='/' element={<ContactLink />} />
+                        <Route path='/home' element={<ContactLink />} />
+                        <Route path='/portfolio' element={<ContactLink />} />
+                    </Routes>
                     <FooterBar changePage={this.props.changePage} />
                 </div>
             );
