@@ -1,6 +1,8 @@
 import React from 'react';
 import './ContactLink.css';
 
+import { Link } from 'react-router-dom';
+
 class ContactLink extends React.Component {
     render() {
         return (
@@ -10,7 +12,9 @@ class ContactLink extends React.Component {
                 </p>
                 <div className="separator"></div>
                 <button className="contact-me">
-                    Contact me
+                    <Link to='/contact-me' style={{color: 'inherit', textDecoration: 'none'}}>
+                        Contact me
+                    </Link>
                 </button>
             </div>
         );

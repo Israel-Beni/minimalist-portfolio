@@ -2,6 +2,8 @@ import React from 'react';
 import './AboutMe.css';
 import profileImage from '../../images/homepage_profile.jpg';
 
+import { Link } from 'react-router-dom';
+
 class AboutMe extends React.Component {
     render() {
         return (
@@ -23,8 +25,10 @@ class AboutMe extends React.Component {
                             playing guitar or piano, and sometimes writing poems and songs. I'd love you to 
                             check out my work.
                         </p>
-                        <button className="go-to" onClick={ event => { this.props.changePage('PROFILE')}}>
-                            Go to portfolio
+                        <button className="go-to">
+                            <Link to='/portfolio' style={{textDecoration: 'none', color: 'inherit'}}>
+                                Go to portfolio
+                            </Link>
                         </button>
                     </div>
                 </div>

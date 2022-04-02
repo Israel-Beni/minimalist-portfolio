@@ -1,0 +1,11 @@
+{
+    "projects": [
+        {
+            "id": 34483,
+            "meta": {
+                "name": "manage",
+                "description": "This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS3, React.js and JavaScript for fluidity plus React Router for the app routing. "
+            }
+        }
+    ]
+}
