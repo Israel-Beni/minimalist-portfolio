@@ -1,0 +1,55 @@
+.Project {
+    width: 63.4375rem;
+    height: 31.25rem;
+}
+
+.Project-container {
+    display: flex;
+    width: inherit;
+    height: inherit;
+    justify-content: space-between;
+}
+
+.Project .thumbnail-container {
+    width: 33.75rem;
+    height: inherit;
+}
+
+.Project .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 21.875rem;
+    height: inherit;
+    border-top: 1px solid rgb(51, 50, 61, .15);
+    border-bottom: 1px solid rgb(51, 50, 61, .15);
+    color: #33323D;
+}
+
+.Project .info h2 {
+    font-family: "Ibarra Real Nova";
+    font-size: 2.5rem;
+    line-height: 2.625rem;
+    letter-spacing: -.36px;
+    font-weight: bold;
+    margin-bottom: 1.75rem;
+}
+
+.Project .info .description {
+    font-family: "Public Sans";
+    font-size: 1rem;
+    line-height: 1.875rem;
+    opacity: .8;
+    margin-bottom: 1.5rem;
+}
+
+.Project .info button {
+    width: 10.9375rem;
+    height: 3rem;
+    border: 1px solid #33323D;
+    letter-spacing: 2px;
+    line-height: .875rem;
+    font-size: .75rem;
+    background-color: transparent;
+}
+
