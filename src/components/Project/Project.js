@@ -1,5 +1,6 @@
 import React from 'react';
 import './Project.css';
+import { getData } from '../../api/api';
 
 import { Link } from 'react-router-dom';
 
@@ -10,6 +11,8 @@ class Project extends React.Component {
     }
 
     swatchModels() {
+        // const jsonObject = JSON.parse(getData());
+        console.log("getData: ", getData());
         return this.props.model !== 'thumbnail-first' ? (
             <div className="thumbnail-first Project-container">
                 <div className="thumbnail-container">
@@ -17,7 +20,7 @@ class Project extends React.Component {
                 </div>
                 <div className="info">
                     <h2>Manage</h2>
-                    <p class="description">
+                    <p className="description">
                         This project required me to build a fully responsive landing
                         page to the designs provided. I used HTLM5 along with CSS Grid
                         and JavaScript for the areas that required interactivity, such as the testimonial
@@ -32,27 +35,36 @@ class Project extends React.Component {
                 </div>
             </div>
         ) : (
-        <div className="thumbnail-last Project-container">
-            <div className="info">
-                <h2>Manage 2</h2>
-                <p class="description">
-                    This project required me to build a fully responsive landing
-                    page to the designs provided. I used HTLM5 along with CSS Grid
-                    and JavaScript for the areas that required interactivity, such as the testimonial
-                    slider.
-                </p>
-                <button>
-                    <Link to="/portfolio/manage"
-                          style={{ textDecoration: "none", color: "#33323D"}}>
-                        {"View Project".toUpperCase()}
-                    </Link>
-                </button>
+            <div className="thumbnail-last Project-container">
+                <div className="info">
+                    <h2>Manage 2</h2>
+                    <p className="description">
+                        This project required me to build a fully responsive landing
+                        page to the designs provided. I used HTLM5 along with CSS Grid
+                        and JavaScript for the areas that required interactivity, such as the testimonial
+                        slider.
+                    </p>
+                    <button>
+                        <Link to="/portfolio/manage"
+                            style={{ textDecoration: "none", color: "#33323D"}}>
+                            {"View Project".toUpperCase()}
+                        </Link>
+                    </button>
+                </div>
+                <div className="thumbnail-container">
+                    <img src="" alt="" />
+                </div>
             </div>
-            <div className="thumbnail-container">
-                <img src="" alt="" />
-            </div>
-        </div>
-    );
+        );
+    }
+
+    async componentDidMount() {
+        const projects = await getData();
+        console.log('getData from componentDidMount: ', projects);
+    }
+
+    componentDidUpdate() {
+        console.log('getData from componentDidUpdate: ', getData())
     }
 
     render() {

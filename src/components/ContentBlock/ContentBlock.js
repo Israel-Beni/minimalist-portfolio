@@ -40,7 +40,7 @@ class ContentBlock extends React.Component {
                     <Route path='/contact-me' element={<ContactMe deactivateHomeMenuItem={this.props.deactivateHomeMenuItem} />} />
                 </Routes>
                 <Routes>
-                    <Route path='/portfolio' element={<Portfolio deactivateHomeMenuItem={this.props.deactivateHomeMenuItem} />} />
+                    <Route path='/portfolio/*' element={<Portfolio deactivateHomeMenuItem={this.props.deactivateHomeMenuItem} />} />
                 </Routes>
             </main>
         );
