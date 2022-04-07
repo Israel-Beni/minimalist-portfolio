@@ -5,6 +5,8 @@ import FooterBar from '../FooterBar/FooterBar';
 
 import { Routes, Route } from 'react-router-dom';
 
+
+
 class Footer extends React.Component {
     render() {
         return (
