@@ -4,7 +4,7 @@ import { getData } from '../../api/api';
 import { toTitleCase } from '../../utilities';
 
 import portfolioImage from '../../images/portfolio/desktop/image-portfolio-manage.jpg'
-import loading from '../../images/icons/icons8-spinner.gif'
+import loading from '../../images/icons/icons8-spinner.gif';
 
 import { Link } from 'react-router-dom';
 
@@ -21,6 +21,7 @@ class Project extends React.Component {
         const data = this.state.data;
         if (data.length > 0) {
             const name = data[0].name;
+            const image = data[0].images.portfolio.desktop;
             return this.props.model === 'thumbnail-first' ? (
                 <div className="thumbnail-first Project-container">
                     <div className="thumbnail-container">
@@ -64,7 +65,7 @@ class Project extends React.Component {
                     </div>
                 </div>
             );
-        } else if (data.length == 0) {
+        } else if (data.length === 0) {
             return (
                 <div className="loading">
                     <img src={loading} alt="" />

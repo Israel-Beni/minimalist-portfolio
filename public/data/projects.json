@@ -8,7 +8,7 @@
             "stacks": [],
             "images": {
                 "portfolio": {
-                    "desktop": "../../src/images/portfolio/desktop/image-portfolio-manage.jpg",
+                    "desktop": "../../images/portfolio/desktop/image-portfolio-manage.jpg",
                     "tablet": "../../src/images/portfolio/tablet/image-portfolio-manage.jpg",
                     "mobile": "../../src/images/portfolio/mobile/image-portfolio-manage.jpg"
                 },
@@ -21,7 +21,7 @@
                     "desktop": "",
                     "tablet": "",
                     "mobile": ""
-                }
+                } 
             }
         },
         {
