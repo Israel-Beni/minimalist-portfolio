@@ -6,5 +6,8 @@ export const getData = async () => {
         }
     });
     const json = await response.json();
+    console.log('json: ', json);
+    console.log('json.projects: ', json.projects);
+    console.log('json.projects[0].name: ', json.projects[0].name)
     return json.projects;
 }

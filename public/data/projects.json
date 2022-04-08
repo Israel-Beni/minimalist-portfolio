@@ -1,10 +1,31 @@
 {
     "projects": [
         {
-            "meta": {
-                "name": "manage",
-                "description": "This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS3, React.js and JavaScript for fluidity plus React Router for the app routing. "
+            "name": "manage",
+            "info": "This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS3, React.js and JavaScript for fluidity plus React Router for the app routing.",
+            "description": "This project was a front-dent challenge from Frontend Mentor. It's a platform enables you to practice building websites and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I've learned something new with each project, helping me to improve and adapt my style.",
+            "categories": [],
+            "stacks": [],
+            "images": {
+                "portfolio": {
+                    "desktop": "../../src/images/portfolio/desktop/image-portfolio-manage.jpg",
+                    "tablet": "../../src/images/portfolio/tablet/image-portfolio-manage.jpg",
+                    "mobile": "../../src/images/portfolio/mobile/image-portfolio-manage.jpg"
+                },
+                "detail": {
+                    "desktop": "",
+                    "tablet": "",
+                    "mobile": ""
+                },
+                "previews": {
+                    "desktop": "",
+                    "tablet": "",
+                    "mobile": ""
+                }
             }
+        },
+        {
+
         }
     ]
 }

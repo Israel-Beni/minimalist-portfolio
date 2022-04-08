@@ -10,6 +10,7 @@ class Portfolio extends React.Component {
         super(props);
         this.model = 'thumbnail-last';
         this.swatchModels = this.swatchModels.bind(this);
+
     }
 
     // To deactivate the Home menu item when as soon as Banner is mounted
@@ -26,7 +27,7 @@ class Portfolio extends React.Component {
 
     render() {
         return (
-            <section>
+            <section className="Portfolio">
                 <Routes>
                     <Route path="/" element={<Project model={this.swatchModels()} />} />
                 </Routes>
