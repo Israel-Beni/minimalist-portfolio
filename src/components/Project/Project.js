@@ -17,14 +17,14 @@ class Project extends React.Component {
             const name = data.name;
             //const image = data[0].images.portfolio.desktop;
             const about = data.about;
-            const imagePath = data.images.portfolio.desktop;
-            console.log("image", imagePath);
+            const imagePaths = data.images.portfolio;
+            console.log("image", imagePaths);
             return this.props.model === 'thumbnail-first' ? (
                 <div className="thumbnail-first Project-container">
                     <div className="thumbnail-container">
-                        <img className="desktop" src={`${process.env.PUBLIC_URL}${imagePath}`} alt={`${name}-thumbnail`} />
-                        <img className="tablet" src={`${process.env.PUBLIC_URL}${imagePath}`} alt={`${name}-thumbnail`} />
-                        <img className="mobile" src={`${process.env.PUBLIC_URL}${imagePath}`} alt={`${name}-thumbnail`} />
+                        <img className="desktop" src={`${process.env.PUBLIC_URL}${imagePaths.desktop}`} alt={`${name}-thumbnail`} />
+                        <img className="tablet" src={`${process.env.PUBLIC_URL}${imagePaths.tablet}`} alt={`${name}-thumbnail`} />
+                        <img className="mobile" src={`${process.env.PUBLIC_URL}${imagePaths.mobile}`} alt={`${name}-thumbnail`} />
                     </div>
                     <div className="info">
                         <h2>{toTitleCase(name)}</h2>
@@ -57,9 +57,9 @@ class Project extends React.Component {
                         </button>
                     </div>
                     <div className="thumbnail-container">
-                        <img className="desktop" src={`${process.env.PUBLIC_URL}${imagePath}`} alt={`${name}-thumbnail`} />
-                        <img className="tablet" src={`${process.env.PUBLIC_URL}${imagePath}`} alt={`${name}-thumbnail`} />
-                        <img className="mobile" src={`${process.env.PUBLIC_URL}${imagePath}`} alt={`${name}-thumbnail`} />
+                        <img className="desktop" src={`${process.env.PUBLIC_URL}${imagePaths.desktop}`} alt={`${name}-thumbnail`} />
+                        <img className="tablet" src={`${process.env.PUBLIC_URL}${imagePaths.tablet}`} alt={`${name}-thumbnail`} />
+                        <img className="mobile" src={`${process.env.PUBLIC_URL}${imagePaths.mobile}`} alt={`${name}-thumbnail`} />
                     </div>
                 </div>
             );
