@@ -30,6 +30,10 @@
     object-fit: cover;
 }
 
+.Project .thumbnail-container .tablet, .thumbnail-container .mobile {
+    display: none;
+}
+
 .Project .info {
     display: flex;
     flex-basis: 21.875rem;

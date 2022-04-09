@@ -38,7 +38,8 @@ class Portfolio extends React.Component {
 
     swatchModels() {
         console.log("this.props.match", this.props.match);
-        return this.model === 'thumbnail-first' ? 'thumbnail-last' : 'thumbnail-first';
+        this.model === 'thumbnail-first' ? this.model = 'thumbnail-last' : this.model = 'thumbnail-first';
+        return this.model;
     }
 
     renderProjects() {

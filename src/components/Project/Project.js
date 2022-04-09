@@ -22,7 +22,9 @@ class Project extends React.Component {
             return this.props.model === 'thumbnail-first' ? (
                 <div className="thumbnail-first Project-container">
                     <div className="thumbnail-container">
-                        <img src={`${process.env.PUBLIC_URL}${imagePath}`} alt={`${name}-thumbnail`} />
+                        <img className="desktop" src={`${process.env.PUBLIC_URL}${imagePath}`} alt={`${name}-thumbnail`} />
+                        <img className="tablet" src={`${process.env.PUBLIC_URL}${imagePath}`} alt={`${name}-thumbnail`} />
+                        <img className="mobile" src={`${process.env.PUBLIC_URL}${imagePath}`} alt={`${name}-thumbnail`} />
                     </div>
                     <div className="info">
                         <h2>{toTitleCase(name)}</h2>
@@ -55,7 +57,9 @@ class Project extends React.Component {
                         </button>
                     </div>
                     <div className="thumbnail-container">
-                        <img src="" alt="" />
+                        <img className="desktop" src={`${process.env.PUBLIC_URL}${imagePath}`} alt={`${name}-thumbnail`} />
+                        <img className="tablet" src={`${process.env.PUBLIC_URL}${imagePath}`} alt={`${name}-thumbnail`} />
+                        <img className="mobile" src={`${process.env.PUBLIC_URL}${imagePath}`} alt={`${name}-thumbnail`} />
                     </div>
                 </div>
             );
