@@ -15,10 +15,8 @@ class Project extends React.Component {
         const data = this.props.project;
         if (data) {
             const name = data.name;
-            //const image = data[0].images.portfolio.desktop;
             const about = data.about;
             const imagePaths = data.images.portfolio;
-            console.log("image", imagePaths);
             return this.props.model === 'thumbnail-first' ? (
                 <div className="thumbnail-first Project-container">
                     <div className="thumbnail-container">
@@ -32,10 +30,10 @@ class Project extends React.Component {
                             {about}
                         </p>
                         <button>
-                            <Link to="/portfolio/manage"
+                            <a href={data.urls.git}
                                 style={{ textDecoration: "none", color: "#33323D"}}>
                                 {"View Project".toUpperCase()}
-                            </Link>
+                            </a>
                         </button>
                     </div>
                 </div>
@@ -50,10 +48,10 @@ class Project extends React.Component {
                             slider.
                         </p>
                         <button>
-                            <Link to="/portfolio/manage"
+                            <a href={data.urls.git}
                                 style={{ textDecoration: "none", color: "#33323D"}}>
                                 {"View Project".toUpperCase()}
-                            </Link>
+                            </a>
                         </button>
                     </div>
                     <div className="thumbnail-container">
