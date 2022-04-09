@@ -8,29 +8,26 @@ import { Link } from 'react-router-dom';
 class Project extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            data: []
-        };
         this.swatchModels = this.swatchModels.bind(this);
     }
 
     swatchModels() {
-        const data = this.state.data;
-        if (data.length > 0) {
-            const name = data[0].name;
-            const image = data[0].images.portfolio.desktop;
+        const data = this.props.project;
+        if (data) {
+            const name = data.name;
+            //const image = data[0].images.portfolio.desktop;
+            const about = data.about;
+            const imagePath = data.images.portfolio.desktop;
+            console.log("image", imagePath);
             return this.props.model === 'thumbnail-first' ? (
                 <div className="thumbnail-first Project-container">
                     <div className="thumbnail-container">
-                        <img src="../../../images/portfolio/desktop/image-portfolio-minimalist-portfolio.jpg" alt="" />
+                        <img src={`${process.env.PUBLIC_URL}${imagePath}`} alt={`${name}-thumbnail`} />
                     </div>
                     <div className="info">
                         <h2>{toTitleCase(name)}</h2>
                         <p className="description">
-                            This project required me to build a fully responsive landing
-                            page to the designs provided. I used HTLM5 along with CSS Grid
-                            and JavaScript for the areas that required interactivity, such as the testimonial
-                            slider.
+                            {about}
                         </p>
                         <button>
                             <Link to="/portfolio/manage"
@@ -70,21 +67,14 @@ class Project extends React.Component {
             );
     }}
 
-    async componentDidMount() {
-        this.setState({
-        data: await getData()
-        });
-        console.log('getData\'s name from componentDidMount: ',  this.state.data[0].name);
-    }
-
-    async componentDidUpdate() {
-         console.log('getData from componentDidUpdate: ',  this.state.data[0].name)
+    componentDidMount() {
+        console.log('Hello from ComponentDidMount in Portfolio');
+        this.props.deactivateHomeMenuItem('home');
     }
 
     render() {
         return (
             <div className="Project">
-                {console.log('in render: ', this.state.data[0])}
                 {this.swatchModels()}
             </div>
         );

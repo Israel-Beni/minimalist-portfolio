@@ -10,7 +10,7 @@
             "stacks": ["React", "React Router", "JavaScript", "HTML5", "CSS3"],
             "images": {
                 "portfolio": {
-                    "desktop": "../../images/portfolio/desktop/image-portfolio-minimalist-portfolio.jpg",
+                    "desktop": "/images/portfolio/desktop/image-portfolio-minimalist-portfolio.jpg",
                     "tablet": "",
                     "mobile": ""
                 },
@@ -34,9 +34,9 @@
             "stacks": [],
             "images": {
                 "portfolio": {
-                    "desktop": "../../images/portfolio/desktop/image-portfolio-manage.jpg",
-                    "tablet": "../../src/images/portfolio/tablet/image-portfolio-manage.jpg",
-                    "mobile": "../../src/images/portfolio/mobile/image-portfolio-manage.jpg"
+                    "desktop": "/images/portfolio/desktop/image-portfolio-manage.jpg",
+                    "tablet": "../../../src/images/portfolio/tablet/image-portfolio-manage.jpg",
+                    "mobile": "../../../src/images/portfolio/mobile/image-portfolio-manage.jpg"
                 },
                 "detail": {
                     "desktop": "",
@@ -49,9 +49,6 @@
                     "mobile": ""
                 }
             }
-        },
-        {
-
         }
     ]
 }

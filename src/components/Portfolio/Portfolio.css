@@ -1,2 +1,14 @@
 .Portfolio {
 }
+
+.Portfolio .loading {
+    width: 5vh;
+    height: 37vh;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.Portfolio .loading img {
+    width: 5vh;
+    height: 5vh;
+}
