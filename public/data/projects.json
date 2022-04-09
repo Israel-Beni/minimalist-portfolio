@@ -11,8 +11,8 @@
             "images": {
                 "portfolio": {
                     "desktop": "/images/portfolio/desktop/image-portfolio-minimalist-portfolio.jpg",
-                    "tablet": "",
-                    "mobile": ""
+                    "tablet": "/images/portfolio/tablet/image-portfolio-minimalist-portfolio.jpg",
+                    "mobile": "/images/portfolio/mobile/image-portfolio-minimalist-portfolio.jpg"
                 },
                 "details": {
                     "desktop": "",

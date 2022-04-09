@@ -30,3 +30,14 @@
 .Portfolio ul li:last-child {
     margin-bottom: 0;
 }
+
+@media only screen and (max-width: 1130px) {
+    .Portfolio .loading {
+        height: 40vh;
+        margin-top: 4rem;
+    }
+    
+    .Portfolio ul li:nth-child {
+        align-self: center;
+    }
+}
