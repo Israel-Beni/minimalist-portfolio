@@ -73,5 +73,41 @@
 }
 
 @media only screen and (max-width: 1130px) {
-    
+    .Project {
+        width: 43.0625rem;
+        height: 26.125rem;
+    }
+
+    .Project .thumbnail-container {
+        width: 21.1875rem;
+        height: 19.625rem;;
+        margin: 3.25rem 0;
+    }
+
+    .Project .thumbnail-container img {
+        width: inherit;
+        height: inherit;
+    }
+
+    .Project .thumbnail-container .tablet {
+        display: inline;
+    }
+
+    .Project .thumbnail-container .desktop, .thumbnail-container .mobile {
+        display: none;
+    }
+
+    .Portfolio .info {
+        flex-basis: 17.5625rem;
+    }
+
+    .Portfolio .info h2 {
+        margin-bottom: 1.8125rem;
+    }
+
+    .Portfolio .info .description {
+        font-size: .9375rem;
+        margin-bottom: 2.1875rem;
+
+    }
 }
