@@ -1,4 +1,5 @@
 .Portfolio {
+    width: 100%;
 }
 
 .Portfolio .loading {
@@ -11,4 +12,21 @@
 .Portfolio .loading img {
     width: 5vh;
     height: 5vh;
+}
+
+.Portfolio ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.Portfolio ul li {
+    margin-bottom: 5rem;
+}
+
+.Portfolio ul li:nth-child(2n) {
+    align-self: flex-end;
+}
+
+.Portfolio ul li:last-child {
+    margin-bottom: 0;
 }
