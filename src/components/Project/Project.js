@@ -3,9 +3,6 @@ import './Project.css';
 import { getData } from '../../api/api';
 import { toTitleCase } from '../../utilities';
 
-import portfolioImage from '../../images/portfolio/desktop/image-portfolio-manage.jpg'
-import loading from '../../images/icons/icons8-spinner.gif';
-
 import { Link } from 'react-router-dom';
 
 class Project extends React.Component {
@@ -25,7 +22,7 @@ class Project extends React.Component {
             return this.props.model === 'thumbnail-first' ? (
                 <div className="thumbnail-first Project-container">
                     <div className="thumbnail-container">
-                        <img src={portfolioImage} alt="" />
+                        <img src="../../../images/portfolio/desktop/image-portfolio-minimalist-portfolio.jpg" alt="" />
                     </div>
                     <div className="info">
                         <h2>{toTitleCase(name)}</h2>
@@ -68,7 +65,7 @@ class Project extends React.Component {
         } else if (data.length === 0) {
             return (
                 <div className="loading">
-                    <img src={loading} alt="" />
+                    <img src="../../../images/icons/icons8-spinner.gif" alt="" />
                 </div>
             );
     }}

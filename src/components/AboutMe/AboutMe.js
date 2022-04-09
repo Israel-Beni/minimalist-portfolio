@@ -1,6 +1,5 @@
 import React from 'react';
 import './AboutMe.css';
-import profileImage from '../../images/homepage_profile.jpg';
 
 import { Link } from 'react-router-dom';
 
@@ -9,7 +8,7 @@ class AboutMe extends React.Component {
         return (
             <div className="AboutMe" id="AboutMe">
                 <div className="image_container">
-                    <img src={profileImage} alt="profile" />
+                    <img src="../../../images/homepage_profile.jpg" alt="profile" />
                 </div>
                 <div className="separator"></div>
                 <div className="info">

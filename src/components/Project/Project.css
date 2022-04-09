@@ -26,6 +26,10 @@
     height: inherit;
 }
 
+.Project .thumbnail-container img {
+    object-fit: cover;
+}
+
 .Project .info {
     display: flex;
     flex-basis: 21.875rem;

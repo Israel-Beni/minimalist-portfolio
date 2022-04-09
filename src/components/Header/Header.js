@@ -1,6 +1,5 @@
 import React from 'react';
 import './Header.css';
-import logo from '../../images/logo.svg';
 
 import { NavLink, Link } from 'react-router-dom';
 
@@ -109,7 +108,7 @@ class Header extends React.Component {
             <section className="header">
                 <div className="logo_container">
                     <Link to='/home'>
-                        <img src={logo} alt="logo" />
+                        <img src="../../../images/logo.svg" alt="logo" />
                     </Link>
                 </div>
                 <div className="separator"></div>
