@@ -39,7 +39,7 @@
                 "portfolio": {
                     "desktop": "/images/portfolio/desktop/image-portfolio-manage.jpg",
                     "tablet": "/images/portfolio/tablet/image-portfolio-manage.jpg",
-                    "mobile": "/src/images/portfolio/mobile/image-portfolio-manage.jpg"
+                    "mobile": "/images/portfolio/mobile/image-portfolio-manage.jpg"
                 },
                 "detail": {
                     "desktop": "",

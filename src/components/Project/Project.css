@@ -97,17 +97,68 @@
         display: none;
     }
 
-    .Portfolio .info {
+    .Project .info {
         flex-basis: 17.5625rem;
     }
 
-    .Portfolio .info h2 {
+    .Project .info h2 {
         margin-bottom: 1.8125rem;
     }
 
-    .Portfolio .info .description {
+    .Project .info .description {
         font-size: .9375rem;
         margin-bottom: 2.1875rem;
 
+    }
+}
+
+@media only screen and (max-width: 705px) {
+    .Project {
+        width: 19.4375rem;
+        height: auto;
+    }
+
+    .Project .Project-container {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .Project .thumbnail-last .info {
+        height: 21.25rem;
+        position: relative;
+        top: 20rem;
+    }
+
+    .Project .thumbnail-last .thumbnail-container {
+        position: relative;
+        top: -21.25rem;
+        margin-top: 0;
+    }
+
+    .Project .Project-container .thumbnail-container {
+        width: inherit;
+        height: 18rem;
+        margin-bottom: 2rem;
+    }
+
+    .Project .thumbnail-container .tablet, .thumbnail-container .desktop {
+        display: none;
+    }
+
+    .Project .thumbnail-container .mobile {
+        display: inline;
+    }
+
+    .Project .info {
+        flex-basis: inherit;
+        padding: 1.5625rem 0;
+    }
+
+    .Project .info h2 {
+        margin-bottom: 1.5rem;
+    }
+
+    .Project .info .description {
+        margin-bottom: 1.5rem;
     }
 }
