@@ -231,51 +231,24 @@
                     "desktop": "",
                     "tablet": "",
                     "mobile": ""
-                }   
-            }
-        },
-        {
-            "name": "Hell",
-            "about": "",
-            "urls": {
-                "git": "https://github.com/Israel-Beni/"
-            },
-            "categories": [],
-            "stacks": ["React", "JavaScript", "HTML5", "CSS3"],
-            "images": {
-                "portfolio": {
-                    "desktop": "/images/portfolio/desktop/desktop-image-portfolio-.jpg",
-                    "tablet": "/images/portfolio/tablet/tablet-image-portfolio-.jpg",
-                    "mobile": "/images/portfolio/mobile/mobile-image-portfolio-.jpg"
-                },
-                "details": {
-                    "desktop": "",
-                    "tablet": "",
-                    "mobile": ""
-                },
-                "previews": {
-                    "desktop": "",
-                    "tablet": "",
-                    "mobile": ""
                 }
             }
         },
         {
-            "name": "manage",
-            "about": "This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS3, React.js and JavaScript for fluidity plus React Router for the app routing.",
-            "description": "This project was a front-dent challenge from Frontend Mentor. It's a platform enables you to practice building websites and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I've learned something new with each project, helping me to improve and adapt my style.",
-            "categories": [],
-            "stacks": [],
+            "name": "HTML Form Cheat Sheet",
+            "about": "This is an HTML reference Cheat Sheet for web developers. I developed this site taking inspiration from Codecademy website design.",
             "urls": {
-                "git": ""
+                "git": "https://github.com/Israel-Beni/HTML-Tags-Cheat-Sheet"
             },
+            "categories": [],
+            "stacks": ["HTML5", "CSS3", "JavaScript"],
             "images": {
                 "portfolio": {
-                    "desktop": "/images/portfolio/desktop/image-portfolio-manage.jpg",
-                    "tablet": "/images/portfolio/tablet/image-portfolio-manage.jpg",
-                    "mobile": "/images/portfolio/mobile/image-portfolio-manage.jpg"
+                    "desktop": "/images/portfolio/desktop/desktop-image-portfolio-html-form-cheat-sheet.jpg",
+                    "tablet": "/images/portfolio/tablet/tablet-image-portfolio-html-form-cheat-sheet.jpg",
+                    "mobile": "/images/portfolio/mobile/mobile-image-portfolio-html-form-cheat-sheet.jpg"
                 },
-                "detail": {
+                "details": {
                     "desktop": "",
                     "tablet": "",
                     "mobile": ""
