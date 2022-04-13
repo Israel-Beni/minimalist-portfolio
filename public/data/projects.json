@@ -183,6 +183,32 @@
             }
         },
         {
+            "name": "Fotomat",
+            "about": "Fotomat is a website project inspired by the Codecademy learning platform. It is a photography blog webpage project I did just for fun. The main stack here is CSS.",
+            "urls": {
+                "git": "https://github.com/Israel-Beni/Fotomat"
+            },
+            "categories": [],
+            "stacks": ["CSS3", "HTML5"],
+            "images": {
+                "portfolio": {
+                    "desktop": "/images/portfolio/desktop/desktop-image-portfolio-fotomat.jpg",
+                    "tablet": "/images/portfolio/tablet/tablet-image-portfolio-fotomat.jpg",
+                    "mobile": "/images/portfolio/mobile/mobile-image-portfolio-fotomat.jpg"
+                },
+                "details": {
+                    "desktop": "",
+                    "tablet": "",
+                    "mobile": ""
+                },
+                "previews": {
+                    "desktop": "",
+                    "tablet": "",
+                    "mobile": ""
+                }
+            }
+        },
+        {
             "name": "manage",
             "about": "This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS3, React.js and JavaScript for fluidity plus React Router for the app routing.",
             "description": "This project was a front-dent challenge from Frontend Mentor. It's a platform enables you to practice building websites and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I've learned something new with each project, helping me to improve and adapt my style.",
