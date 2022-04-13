@@ -124,14 +124,14 @@
     }
 
     .Project .thumbnail-last .info {
-        height: 21.25rem;
+        height: 23.25rem;
         position: relative;
         top: 20rem;
     }
 
     .Project .thumbnail-last .thumbnail-container {
         position: relative;
-        top: -21.25rem;
+        top: -23.25rem;
         margin-top: 0;
     }
 
