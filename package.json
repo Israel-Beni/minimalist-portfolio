@@ -1,6 +1,7 @@
 {
   "name": "minimalist-portfolio",
   "version": "1.0.0",
+  "homepage": "https://israel-beni.github.io/minimalist-portfolio",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
