@@ -131,6 +131,32 @@
             }
         },
         {
+            "name": "Gaming Page",
+            "about": "This is a game purchase landing page. I made this page for the sole purpose of practicing responsiveness, hence the core technology used here is CSS.",
+            "urls": {
+                "git": "https://github.com/Israel-Beni/Gaming-website-page"
+            },
+            "categories": [],
+            "stacks": ["CSS", "HTML5", "JavaScript"],
+            "images": {
+                "portfolio": {
+                    "desktop": "/images/portfolio/desktop/desktop-image-portfolio-gaming-page.jpg",
+                    "tablet": "/images/portfolio/tablet/tablet-image-portfolio-gaming-page.jpg",
+                    "mobile": "/images/portfolio/mobile/mobile-image-portfolio-gaming-page.jpg"
+                },
+                "details": {
+                    "desktop": "",
+                    "tablet": "",
+                    "mobile": ""
+                },
+                "previews": {
+                    "desktop": "",
+                    "tablet": "",
+                    "mobile": ""
+                }
+            }
+        },
+        {
             "name": "manage",
             "about": "This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS3, React.js and JavaScript for fluidity plus React Router for the app routing.",
             "description": "This project was a front-dent challenge from Frontend Mentor. It's a platform enables you to practice building websites and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I've learned something new with each project, helping me to improve and adapt my style.",
