@@ -27,6 +27,32 @@
             }
         },
         {
+            "name": "Pet Lover",
+            "about": "This project is a multi-page web app I built using mainly React.js, React Routing concept and JavaScript. The ultimate aim is to allow pet lover to adopt pet(s). It is a project done in order to practice react-router-dom library.",
+            "urls": {
+                "git": "https://github.com/Israel-Beni/Pet-Lover"
+            },
+            "categories": [],
+            "stacks": ["React", "React Router", "JavaScript", "HTML5", "CSS3"],
+            "images": {
+                "portfolio": {
+                    "desktop": "/images/portfolio/desktop/desktop-image-portfolio-pet-lover.jpg",
+                    "tablet": "/images/portfolio/tablet/tablet-image-portfolio-pet-lover.jpg",
+                    "mobile": "/images/portfolio/mobile/image-portfolio-minimalist-portfolio.jpg"
+                },
+                "details": {
+                    "desktop": "",
+                    "tablet": "",
+                    "mobile": ""
+                },
+                "previews": {
+                    "desktop": "",
+                    "tablet": "",
+                    "mobile": ""
+                }
+            }
+        },
+        {
             "name": "manage",
             "about": "This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS3, React.js and JavaScript for fluidity plus React Router for the app routing.",
             "description": "This project was a front-dent challenge from Frontend Mentor. It's a platform enables you to practice building websites and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I've learned something new with each project, helping me to improve and adapt my style.",

@@ -40,12 +40,9 @@ class Project extends React.Component {
             ) : (
                 <div className="thumbnail-last Project-container">
                     <div className="info">
-                        <h2>Manage 2</h2>
+                        <h2>{toTitleCase(name)}</h2>
                         <p className="description">
-                            This project required me to build a fully responsive landing
-                            page to the designs provided. I used HTML5 along with CSS Grid
-                            and JavaScript for the areas that required interactivity, such as the testimonial
-                            slider.
+                            {about}
                         </p>
                         <button>
                             <a href={data.urls.git}
