@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1345e96a6cbf3b6a64d80f958723612e",
+    "revision": "37437f96ad7e770e57c2f9be22975cd4",
     "url": "/minimalist-portfolio/index.html"
   },
   {
-    "revision": "8a70887a71f892cb8c73",
+    "revision": "bb5ee6f1a25b58ecc45d",
     "url": "/minimalist-portfolio/static/css/main.6ea5275f.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/minimalist-portfolio/static/js/3.9f01db21.chunk.js"
   },
   {
-    "revision": "8a70887a71f892cb8c73",
-    "url": "/minimalist-portfolio/static/js/main.80a1dbd4.chunk.js"
+    "revision": "bb5ee6f1a25b58ecc45d",
+    "url": "/minimalist-portfolio/static/js/main.d6eb6b19.chunk.js"
   },
   {
     "revision": "7a31eb7437f6cd9886a4",
