@@ -157,6 +157,32 @@
             }
         },
         {
+            "name": "Dribble-Like Swiping Animation",
+            "about": "This project steps into FrontEnd development to create a commonly seen scroll animation that can be seen on sites like Dribble.com. This involves 0% Javascript, and no other frameworks like GSAP. Instead, it only rely on some good old 'fashioned HTML & CSS.",
+            "urls": {
+                "git": "https://github.com/Israel-Beni/Dribble-Like-Swiping-Animation"
+            },
+            "categories": [],
+            "stacks": ["React", "JavaScript", "HTML5", "CSS3"],
+            "images": {
+                "portfolio": {
+                    "desktop": "/images/portfolio/desktop/desktop-image-portfolio-dribble-like-swiping-animation.jpg",
+                    "tablet": "/images/portfolio/tablet/tablet-image-portfolio-dribble-like-swiping-animation.jpg",
+                    "mobile": "/images/portfolio/mobile/mobile-image-portfolio-dribble-like-swiping-animation.jpg"
+                },
+                "details": {
+                    "desktop": "",
+                    "tablet": "",
+                    "mobile": ""
+                },
+                "previews": {
+                    "desktop": "",
+                    "tablet": "",
+                    "mobile": ""
+                }
+            }
+        },
+        {
             "name": "manage",
             "about": "This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS3, React.js and JavaScript for fluidity plus React Router for the app routing.",
             "description": "This project was a front-dent challenge from Frontend Mentor. It's a platform enables you to practice building websites and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I've learned something new with each project, helping me to improve and adapt my style.",
