@@ -79,6 +79,32 @@
             }
         },
         {
+            "name": "Error-404",
+            "about": "In this project, I created a custom 404 error page following a figma design by devChallenges. The resultant web page is a response react app. This project was bootstrapped with Create React App.",
+            "urls": {
+                "git": "https://github.com/Israel-Beni/error-404"
+            },
+            "categories": [],
+            "stacks": ["React", "JavaScript", "HTML5", "CSS3"],
+            "images": {
+                "portfolio": {
+                    "desktop": "/images/portfolio/desktop/desktop-image-portfolio-error-404.jpg",
+                    "tablet": "/images/portfolio/tablet/tablet-image-portfolio-error-404.jpg",
+                    "mobile": "/images/portfolio/mobile/mobile-image-portfolio-error-404.jpg"
+                },
+                "details": {
+                    "desktop": "",
+                    "tablet": "",
+                    "mobile": ""
+                },
+                "previews": {
+                    "desktop": "",
+                    "tablet": "",
+                    "mobile": ""
+                }
+            }
+        },
+        {
             "name": "manage",
             "about": "This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS3, React.js and JavaScript for fluidity plus React Router for the app routing.",
             "description": "This project was a front-dent challenge from Frontend Mentor. It's a platform enables you to practice building websites and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I've learned something new with each project, helping me to improve and adapt my style.",
