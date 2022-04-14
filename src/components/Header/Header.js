@@ -108,7 +108,7 @@ class Header extends React.Component {
             <section className="header">
                 <div className="logo_container">
                     <Link to='/home'>
-                        <img src="/images/logo.svg" alt="logo" />
+                        <img src={process.env.PUBLIC_URL + "/images/logo.svg"} alt="logo" />
                     </Link>
                 </div>
                 <div className="separator"></div>

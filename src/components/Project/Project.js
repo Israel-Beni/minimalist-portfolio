@@ -61,7 +61,7 @@ class Project extends React.Component {
         } else if (data.length === 0) {
             return (
                 <div className="loading">
-                    <img src="../../../images/icons/icons8-spinner.gif" alt="" />
+                    <img src={process.env.PUBLIC_URL + "/images/icons/icons8-spinner.gif"} alt="" />
                 </div>
             );
     }}

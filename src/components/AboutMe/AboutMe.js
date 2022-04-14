@@ -8,7 +8,7 @@ class AboutMe extends React.Component {
         return (
             <div className="AboutMe" id="AboutMe">
                 <div className="image_container">
-                    <img src="/images/homepage_profile.jpg" alt="profile" />
+                    <img src={process.env.PUBLIC_URL + "/images/homepage_profile.jpg"} alt="profile" />
                 </div>
                 <div className="separator"></div>
                 <div className="info">
