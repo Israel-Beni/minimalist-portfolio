@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/minimalist-portfolio/static/css/main.6ea5275f.chunk.css",
-    "main.js": "/minimalist-portfolio/static/js/main.39163763.chunk.js",
-    "main.js.map": "/minimalist-portfolio/static/js/main.39163763.chunk.js.map",
+    "main.js": "/minimalist-portfolio/static/js/main.a4efa3c4.chunk.js",
+    "main.js.map": "/minimalist-portfolio/static/js/main.a4efa3c4.chunk.js.map",
     "runtime~main.js": "/minimalist-portfolio/static/js/runtime~main.60627a34.js",
     "runtime~main.js.map": "/minimalist-portfolio/static/js/runtime~main.60627a34.js.map",
     "static/js/2.f055f0dd.chunk.js": "/minimalist-portfolio/static/js/2.f055f0dd.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.9f01db21.chunk.js": "/minimalist-portfolio/static/js/3.9f01db21.chunk.js",
     "static/js/3.9f01db21.chunk.js.map": "/minimalist-portfolio/static/js/3.9f01db21.chunk.js.map",
     "index.html": "/minimalist-portfolio/index.html",
-    "precache-manifest.b2031e4010b5851f494d3e9f394f57af.js": "/minimalist-portfolio/precache-manifest.b2031e4010b5851f494d3e9f394f57af.js",
+    "precache-manifest.55b42c0017ccae2feda0174f85da24f8.js": "/minimalist-portfolio/precache-manifest.55b42c0017ccae2feda0174f85da24f8.js",
     "service-worker.js": "/minimalist-portfolio/service-worker.js",
     "static/css/main.6ea5275f.chunk.css.map": "/minimalist-portfolio/static/css/main.6ea5275f.chunk.css.map",
     "static/media/Banner.css": "/minimalist-portfolio/static/media/image-homepage-hero@2x.2e4f457f.jpg"
