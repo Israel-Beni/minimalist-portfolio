@@ -93,7 +93,7 @@ class Header extends React.Component {
             const menuItemValue = this.menuItems[menuItem];
             return <li  key={menuItemValue}
                         id={menuItemValue.toLowerCase()}>
-                        <NavLink    to={`${menuItemValue.trim().replace(/ /, '-').toLowerCase()}`}
+                        <NavLink    to={`/${menuItemValue.trim().replace(/ /, '-').toLowerCase()}`}
                                     activeclassname="active"
                                     >
                             {menuItemValue}
@@ -108,7 +108,7 @@ class Header extends React.Component {
             <section className="header">
                 <div className="logo_container">
                     <Link to='/home'>
-                        <img src="../../../images/logo.svg" alt="logo" />
+                        <img src="/images/logo.svg" alt="logo" />
                     </Link>
                 </div>
                 <div className="separator"></div>

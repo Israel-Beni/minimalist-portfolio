@@ -9,7 +9,6 @@ class Banner extends React.Component {
         this.props.deactivateHomeMenuItem('home');
     }
     render() {
-        //const down_arrows = require('../../images/icons/down-arrows.svg');
         return (
             <section className="Banner" id="Banner">
                 <div className="Banner_text">
@@ -20,7 +19,7 @@ class Banner extends React.Component {
                         <a href="#AboutMe"></a>
                         <div className="image_container">
                             <div className="background_filler"></div>
-                            <img src="../../../images/icons/down-arrows.svg" alt="down-arrows" />
+                            <img src={process.env.PUBLIC_URL + "/images/icons/down-arrows.svg"} alt="down-arrows" />
                         </div>
                         <span>About Me</span>
                     </button>

@@ -26,7 +26,7 @@ deactivateHomeMenuItem(menuItemValue) {
 
   render() {
     return (
-      <Router>
+      <Router basename={'/' + process.env.PUBLIC_URL}>
         <div className="App">
           <div className="separator_1"></div>
           <Header activateHomeMenuItem={this.activateHomeMenuItem}

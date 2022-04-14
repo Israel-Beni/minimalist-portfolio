@@ -20,6 +20,8 @@ class ContentBlock extends React.Component {
         console.log(home.getAttribute('class'));
 }
     render() {
+        console.log("public url:", process.env.PUBLIC_URL);
+        console.log("env:", process.env);
         return (
             <main className="ContentBlock">
                 <Routes>

@@ -8,7 +8,7 @@ class AboutMe extends React.Component {
         return (
             <div className="AboutMe" id="AboutMe">
                 <div className="image_container">
-                    <img src="../../../images/homepage_profile.jpg" alt="profile" />
+                    <img src={process.env.PUBLIC_URL + "/images/homepage_profile.jpg"} alt="profile" />
                 </div>
                 <div className="separator"></div>
                 <div className="info">
@@ -25,7 +25,7 @@ class AboutMe extends React.Component {
                             check out my work.
                         </p>
                         <button className="go-to">
-                            <Link to='/portfolio' style={{textDecoration: 'none', color: 'inherit'}}>
+                            <Link to={process.env.PUBLIC_URL + '/portfolio'} style={{textDecoration: 'none', color: 'inherit'}}>
                                 Go to portfolio
                             </Link>
                         </button>
