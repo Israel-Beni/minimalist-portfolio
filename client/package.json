@@ -1,5 +1,5 @@
 {
-  "name": "minimalist-portfolio",
+  "name": "minimalist-portfolio-client",
   "version": "1.0.0",
   "homepage": "https://israel-beni.github.io/minimalist-portfolio/",
   "private": true,
@@ -20,7 +20,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "proxy": "http://localhost:5000"
   },
   "eslintConfig": {
     "extends": [
