@@ -4,7 +4,8 @@
             "name": "portfolio",
             "about": "In this project, I built my portfolio website. I concocted it using React, React Router, along side HTML5 and CSS3 and keeping in mind responsiveness and fluidity in order to offer an excellent user experience.",
             "urls": {
-                "git": "https://github.com/Israel-Beni/minimalist-portfolio"
+                "git": "https://github.com/Israel-Beni/minimalist-portfolio",
+                "demo": "https://israel-beni.github.io/minimalist-portfolio/"
             },
             "categories": [],
             "stacks": ["React", "React Router", "JavaScript", "HTML5", "CSS3"],
@@ -30,7 +31,8 @@
             "name": "Pet Lover",
             "about": "This project is a multi-page web app I built using mainly React.js, React Routing concept and JavaScript. The ultimate aim is to allow pet lover to adopt pet(s). It is a project done in order to practice react-router-dom library.",
             "urls": {
-                "git": "https://github.com/Israel-Beni/Pet-Lover"
+                "git": "https://github.com/Israel-Beni/Pet-Lover",
+                "demo": ""
             },
             "categories": [],
             "stacks": ["React", "React Router", "JavaScript", "HTML5", "CSS3"],
@@ -56,7 +58,8 @@
             "name": "Ravenous",
             "about": "Ravenous is response client-side React application, that I built utilizing the Yelp API to search for local businesses. This app was inspired by Codecademy.",
             "urls": {
-                "git": "https://github.com/Israel-Beni/ravenous"
+                "git": "https://github.com/Israel-Beni/ravenous",
+                "demo": "https://israel-beni.github.io/ravenous/"
             },
             "categories": [],
             "stacks": ["React", "JavaScript", "HTML5", "CSS3"],
@@ -82,7 +85,8 @@
             "name": "Error-404",
             "about": "In this project, I created a custom 404 error page following a figma design by devChallenges. The resultant web page is a response react app. This project was bootstrapped with Create React App.",
             "urls": {
-                "git": "https://github.com/Israel-Beni/error-404"
+                "git": "https://github.com/Israel-Beni/error-404",
+                "demo": "https://israel-beni.github.io/error-404/"
             },
             "categories": [],
             "stacks": ["React", "JavaScript", "HTML5", "CSS3"],
@@ -108,7 +112,8 @@
             "name": "QR Code Component",
             "about": "This is a solution to the QR code component challenge on Frontend Mentor. My approach to solving this challenge was by using React.js.",
             "urls": {
-                "git": "https://github.com/Israel-Beni/QR-code-component"
+                "git": "https://github.com/Israel-Beni/QR-code-component",
+                "demo": "https://israel-beni.github.io/QR-code-component/"
             },
             "categories": [],
             "stacks": ["React", "JavaScript", "HTML5", "CSS3"],
@@ -134,7 +139,8 @@
             "name": "Gaming Page",
             "about": "This is a game purchase landing page. I made this page for the sole purpose of practicing responsiveness, hence the core technology used here is CSS.",
             "urls": {
-                "git": "https://github.com/Israel-Beni/Gaming-website-page"
+                "git": "https://github.com/Israel-Beni/Gaming-website-page",
+                "demo": "https://github.com/Israel-Beni/Gaming-website-page"
             },
             "categories": [],
             "stacks": ["CSS", "HTML5", "JavaScript"],
@@ -160,7 +166,8 @@
             "name": "Dribble-Like Swiping Animation",
             "about": "This project steps into FrontEnd development to create a commonly seen scroll animation that can be seen on sites like Dribble.com. This involves 0% Javascript, and no other frameworks like GSAP. Instead, it only rely on some good old 'fashioned HTML & CSS.",
             "urls": {
-                "git": "https://github.com/Israel-Beni/Dribble-Like-Swiping-Animation"
+                "git": "https://github.com/Israel-Beni/Dribble-Like-Swiping-Animation",
+                "demo": "https://israel-beni.github.io/Dribble-Like-Swiping-Animation/"
             },
             "categories": [],
             "stacks": ["React", "JavaScript", "HTML5", "CSS3"],
@@ -186,7 +193,8 @@
             "name": "Fotomat",
             "about": "Fotomat is a website project inspired by the Codecademy learning platform. It is a photography blog webpage project I did just for fun. The main stack here is CSS.",
             "urls": {
-                "git": "https://github.com/Israel-Beni/Fotomat"
+                "git": "https://github.com/Israel-Beni/Fotomat",
+                "demo": "https://israel-beni.github.io/Fotomat/"
             },
             "categories": [],
             "stacks": ["CSS3", "HTML5"],
@@ -212,7 +220,8 @@
             "name": "BD Website Design System",
             "about": "The BD Website Design System comes like a reference website that will support in building more websites in the future.",
             "urls": {
-                "git": "https://github.com/Israel-Beni/BD-Website-Design-System"
+                "git": "https://github.com/Israel-Beni/BD-Website-Design-System",
+                "demo": "https://israel-beni.github.io/BD-Website-Design-System/"
             },
             "categories": [],
             "stacks": ["HTML5", "CSS3"],
@@ -238,7 +247,8 @@
             "name": "HTML Form Cheat Sheet",
             "about": "This is an HTML reference Cheat Sheet for web developers. I developed this site taking inspiration from Codecademy website design.",
             "urls": {
-                "git": "https://github.com/Israel-Beni/HTML-Tags-Cheat-Sheet"
+                "git": "https://github.com/Israel-Beni/HTML-Tags-Cheat-Sheet",
+                "demo": "https://israel-beni.github.io/HTML-Tags-Cheat-Sheet/"
             },
             "categories": [],
             "stacks": ["HTML5", "CSS3", "JavaScript"],

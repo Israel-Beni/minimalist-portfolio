@@ -9,6 +9,11 @@ class Project extends React.Component {
     constructor(props) {
         super(props);
         this.swatchModels = this.swatchModels.bind(this);
+        this.disableButton = this.disableButton.bind(this);
+    }
+
+    disableButton(demoLink) {
+        return demoLink ? '' : "disable";
     }
 
     swatchModels() {
@@ -29,8 +34,8 @@ class Project extends React.Component {
                         <p className="description">
                             {about}
                         </p>
-                        <button>
-                            <a href={data.urls.git}
+                        <button className={`${this.disableButton(data.urls.demo)}`}>
+                            <a href={data.urls.demo}
                                 style={{ textDecoration: "none", color: "#33323D"}}>
                                 {"View Project".toUpperCase()}
                             </a>
@@ -44,8 +49,8 @@ class Project extends React.Component {
                         <p className="description">
                             {about}
                         </p>
-                        <button>
-                            <a href={data.urls.git}
+                        <button className={`${this.disableButton(data.urls.demo)}`}>
+                            <a href={data.urls.demo}
                                 style={{ textDecoration: "none", color: "#33323D"}}>
                                 {"View Project".toUpperCase()}
                             </a>
